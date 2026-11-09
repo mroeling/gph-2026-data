@@ -112,6 +112,7 @@
   ];
 
   let data = [];
+  let alleenLezen = false; // true op een statische host (bv. GitHub Pages): geen server om op te slaan
   let actief = new Set(GERUIMD_OPTIES);
   let bronActief = new Set(['waarneming.nl', 'meldpunt', 'handmatig']);
   let sortKey = 'datum', sortAsc = false;
@@ -217,7 +218,7 @@
         <td><a href="https://www.google.com/maps?q=${w.lat},${w.lon}" target="_blank" rel="noopener">${w.lat.toFixed(5)}, ${w.lon.toFixed(5)}</a></td>
         <td>${esc(w.bron)}</td>
         <td>
-          <select data-key="${esc(w.sleutel)}" aria-label="Geruimd voor ${esc(w.bron)} ${esc(w.id)}">
+          <select data-key="${esc(w.sleutel)}" ${alleenLezen ? 'disabled' : ''} aria-label="Geruimd voor ${esc(w.bron)} ${esc(w.id)}">
             ${GERUIMD_OPTIES.map((o) => `<option value="${o}" ${o === w.geruimd ? 'selected' : ''}>${o}</option>`).join('')}
           </select>
         </td>
@@ -278,14 +279,28 @@
     if (m) { map.setView(m.getLatLng(), Math.max(map.getZoom(), 13)); m.openPopup(); }
   });
 
+  // Lokaal: de server geeft de database. Op een statische host: data.json (alleen-lezen)
+  async function haalWaarnemingen() {
+    try {
+      const res = await fetch('/api/waarnemingen');
+      if (!res.ok) throw new Error('geen server');
+      return { lijst: await res.json(), bron: 'de lokale database' };
+    } catch (e) {
+      alleenLezen = true;
+      const res = await fetch('data.json');
+      const json = await res.json();
+      return { lijst: json.waarnemingen, bron: `data.json (bijgewerkt ${json.gegenereerd.slice(0, 10)}, alleen-lezen)` };
+    }
+  }
+
   async function laad() {
     status('Laden…');
-    const res = await fetch('/api/waarnemingen');
-    data = (await res.json()).map((w) => ({ ...w, sleutel: w.bron + ':' + w.id }));
+    const { lijst, bron } = await haalWaarnemingen();
+    data = lijst.map((w) => ({ ...w, sleutel: w.bron + ':' + w.id }));
     render();
     map.invalidateSize();
     map.fitBounds(FLEVOLAND);
-    status(`${data.length} waarnemingen geladen uit de lokale database.`);
+    status(`${data.length} waarnemingen geladen uit ${bron}.`);
   }
   laad().catch((err) => status('Laden mislukt: ' + err.message));
 })();
