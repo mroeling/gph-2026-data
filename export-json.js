@@ -12,24 +12,33 @@ const rijen = db.prepare(`
 `).all();
 db.close();
 
-// Alleen de straatnaam: het huisnummer valt weg. Een wijknaam vóór het huisnummer (bv. Karveel) blijft staan.
-// Plaats na de komma en postcode vallen ook weg. Zonder straat (bv. alleen gemeente) blijft de tekst zoals hij is.
+// Straat zonder huisnummer. Bij een tweedelig huisnummer (bv. "Archipel 37 25", een wijk met nummer)
+// blijft het eerste nummer bij de straat: "Archipel 37". Plaats na de komma en postcode vallen weg.
 function straat(locatie) {
   if (!locatie || locatie.includes('°')) return locatie; // coördinaat-tekst: niet exporteren als adres
   const deel = locatie.split(',')[0].trim();
+  const tweedelig = deel.match(/^(.*?\s\d+)\s\d+(?:\s|$|[A-Za-z-])/);
+  if (tweedelig) return tweedelig[1].trim();
   const huisnr = deel.search(/\s\d/);
   return (huisnr > 0 ? deel.slice(0, huisnr) : deel).trim();
 }
-// Meldpunt: met adres (uuid-meldingen) alleen de straat; anders alleen de gemeente. De gemelde locatie-tekst blijft lokaal.
+// Plaats: het deel na de laatste komma, zonder postcode (bv. "Bergeend 48, 8322 CR Urk" -> "Urk").
+function plaats(adres) {
+  if (!adres || !adres.includes(',')) return null;
+  const laatste = adres.split(',').pop().replace(/\b\d{4}\s*[A-Za-z]{2}\b/, '').trim();
+  return laatste || null;
+}
+// Meldpunt: met adres "straat, plaats" (geen huisnummer); zonder adres blijft de gemeente (= plaats).
+// De gemelde locatie-tekst (bv. "Hoog in boom") blijft lokaal.
 const adressen = {
   ...JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'meldpunt_adressen.json'), 'utf8')),
   ...JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'meldpunt_adressen_csv.json'), 'utf8')),
 };
-const locaties = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'meldpunt_locaties.json'), 'utf8'));
 for (const r of rijen) {
-  if (r.bron !== 'meldpunt') continue;
-  if (adressen[r.id]) r.locatie = straat(adressen[r.id]);
-  else if (locaties[r.id]) r.locatie = locaties[r.id].gemeente;
+  if (r.bron !== 'meldpunt' || !adressen[r.id]) continue;
+  const s = straat(adressen[r.id]);
+  const p = plaats(adressen[r.id]);
+  r.locatie = p ? `${s}, ${p}` : s;
 }
 
 const uit = path.join(__dirname, 'public', 'data.json');
