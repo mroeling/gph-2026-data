@@ -1,3 +1,6 @@
 data/flevoland.db
 data/flevoland.db-journal
 node_modules/
+data/meldpunt_adressen.json
+data/meldpunt_locaties.json
+data/meldpunt_adressen_csv.json

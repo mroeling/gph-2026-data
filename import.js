@@ -66,7 +66,8 @@ const upsert = db.prepare(`
   INSERT INTO waarnemingen (bron, id, datum, locatie, validatie, status, type, lat, lon, nauwkeurigheid, geruimd, geimporteerd)
   VALUES (@bron, @id, @datum, @locatie, @validatie, @status, @type, @lat, @lon, @nauwkeurigheid, 'ja', @geimporteerd)
   ON CONFLICT(bron, id) DO UPDATE SET
-    datum = excluded.datum, locatie = excluded.locatie,
+    datum = excluded.datum,
+    locatie = CASE WHEN waarnemingen.bron = 'meldpunt' THEN waarnemingen.locatie ELSE excluded.locatie END,
     validatie = excluded.validatie, status = excluded.status, type = excluded.type,
     lat = excluded.lat, lon = excluded.lon, nauwkeurigheid = excluded.nauwkeurigheid,
     geimporteerd = excluded.geimporteerd
@@ -78,7 +79,7 @@ const fouten = [];
 let ok = 0;
 
 function geldig(id, lat, lon) {
-  return /^\d+$/.test(id) && lat > 50.7 && lat < 53.6 && lon > 3.3 && lon < 7.3;
+  return /^(\d+|[0-9a-f]{8}-[0-9a-f-]{27})$/i.test(id) && lat > 50.7 && lat < 53.6 && lon > 3.3 && lon < 7.3;
 }
 
 // Pipe-formaat (waarneming.nl): id|datum|(leeg)|locatie|validatie|lat|lon|nauwkeurigheid
@@ -103,6 +104,9 @@ function naarIso(datum) {
 }
 
 // Meldpunt-export (puntkomma, komma als decimaalteken, UTF-8 met BOM)
+const UUID_VAN = fs.existsSync(path.join(dataDir, 'meldingsnummer_uuid.json'))
+  ? JSON.parse(fs.readFileSync(path.join(dataDir, 'meldingsnummer_uuid.json'), 'utf8'))
+  : {};
 function leesMeldpunt(regels) {
   const tekst = regels.join('\n').replace(/^﻿/, '');
   const [kop, ...data] = tekst.split('\n').filter((l) => l.trim());
@@ -111,7 +115,8 @@ function leesMeldpunt(regels) {
   for (const [i, line] of data.entries()) {
     const v = line.split(';');
     const get = (naam) => (v[kolom[naam]] ?? '').trim();
-    const id = get('Meldingsnummer');
+    // Meldingsnummer -> uuid (data/meldingsnummer_uuid.json), zodat CSV- en API-meldingen niet dubbel komen
+    const id = UUID_VAN[get('Meldingsnummer')] || get('Meldingsnummer');
     const lat = Number(get('Breedtegraad').replace(',', '.'));
     const lon = Number(get('Lengtegraad').replace(',', '.'));
     if (!geldig(id, lat, lon)) { fouten.push(`meldpunt-regel ${i + 2}: ongeldige id/coördinaat (${id})`); continue; }

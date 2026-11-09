@@ -14,7 +14,7 @@ const iso = (s) => { const m = /^(\d{1,2})-(\d{1,2})-(\d{4})$/.exec(s || ''); re
 const items = [
   [63, '18-08-2026', 'kuinderweg 19, Emmeloord', { adres: 'kuinderweg 19, Emmeloord' }],
   [66, '02-09-2026', 'Spijkweg 36, Biddinghuizen', { lat: 52.431156, lon: 5.749290 }],
-  [71, '', 'Vogelwikke 28, Swifterbant', { adres: 'Vogelwikke 28, Swifterbant' }],
+  [71, '22-08-2026', 'Vogelwikke 28, Swifterbant', { adres: 'Vogelwikke 28, Swifterbant' }],
   [81, '13-10-2026', 'kruising van De Wolken en het Noorderlicht, Dronten', { lat: 52.526583, lon: 5.728488 }],
   [96, '29-09-2026', 'Eemhof, Zeewolde', { lat: 52.260390, lon: 5.399480 }],
   [107, '23-09-2026', 'Jimi Hendrixstraat 38, Almere Stad', { lat: 52.367328, lon: 5.175771 }],
@@ -24,8 +24,8 @@ const items = [
   [158, '27-10-2026', 'Sportlaan, Emmeloord', { lat: 52.719223, lon: 5.761924 }],
   [162, '28-10-2026', 'Kokkelweg 8, Biddinghuizen', { adres: 'Kokkelweg 8, Biddinghuizen' }],
   [171, '02-07-2026', 'Lucernehof 94, Biddinghuizen', { adres: 'Lucernehof 94, Biddinghuizen' }],
-  [194, '', 'Stobbenweg 18, 8251 PX Dronten', { lat: 52.506250, lon: 5.836028 }],
-  [199, '', 'Gemaalweg, Rutten', { lat: 52.807806, lon: 5.697222 }],
+  [194, '28-10-2026', 'Stobbenweg 18, 8251 PX Dronten', { lat: 52.506250, lon: 5.836028 }],
+  [199, '04-11-2026', 'Gemaalweg, Rutten', { lat: 52.807806, lon: 5.697222 }],
 ];
 (async () => {
   const handmatigTxt = path.join(__dirname, 'data', 'ruimingen_tf_handmatig.txt');

@@ -37,8 +37,7 @@
     th, td { padding: 8px 10px; border-bottom: 1px solid var(--rand); text-align: left; vertical-align: top; white-space: nowrap; }
     th { background: var(--achtergrond); position: sticky; top: 0; cursor: pointer; user-select: none; }
     th .pijl { color: var(--zacht); font-size: 0.8em; }
-    tr.filterrij th { cursor: default; padding: 6px 10px; }
-    .filterrij input { width: 100%; padding: 6px; font: inherit; border: 1px solid var(--rand); border-radius: 6px; background: var(--kaart); color: var(--tekst); }
+    .filters input[type="date"], .filters input[type="search"] { font: inherit; padding: 4px 6px; border: 1px solid var(--rand); border-radius: 6px; background: var(--kaart); color: var(--tekst); }
     select { font: inherit; padding: 4px 6px; border-radius: 6px; border: 1px solid var(--rand); background: var(--kaart); color: var(--tekst); }
     .gkleur { border-left: 6px solid var(--groen); }
     .rkleur { border-left: 6px solid var(--rood); }
@@ -70,6 +69,13 @@
       <label><input type="checkbox" data-bron value="handmatig" checked> handmatig</label>
       <span class="teller" id="teller"></span>
     </div>
+    <div class="filters" role="group" aria-label="Filter op datum en plaats">
+      <strong>Datum:</strong>
+      <label>van <input id="fVan" type="date" aria-label="Datum vanaf"></label>
+      <label>tot <input id="fTot" type="date" aria-label="Datum tot en met"></label>
+      <strong>Plaats:</strong>
+      <input id="fLocatie" type="search" placeholder="filter plaats…" aria-label="Filter op plaats">
+    </div>
   </header>
 
   <div id="kaart"><button id="kaartKnop" type="button" aria-label="Kaart volledig openen">Volledig scherm</button></div>
@@ -79,12 +85,6 @@
       <table id="tabel">
         <thead>
           <tr id="kopRij"></tr>
-          <tr class="filterrij">
-            <th></th>
-            <th><input id="fDatum" type="search" placeholder="filter datum…" aria-label="Filter op datum"></th>
-            <th><input id="fLocatie" type="search" placeholder="filter plaats…" aria-label="Filter op plaats"></th>
-            <th></th><th></th><th></th><th></th>
-          </tr>
         </thead>
         <tbody id="tbody"></tbody>
       </table>
@@ -175,12 +175,19 @@
   };
 
   function gefilterd() {
-    const fDatum = document.getElementById('fDatum').value.trim().toLowerCase();
+    const van = document.getElementById('fVan').value; // yyyy-mm-dd of leeg
+    const tot = document.getElementById('fTot').value;
     const fLocatie = document.getElementById('fLocatie').value.trim().toLowerCase();
     return data
       .filter((w) => actief.has(w.geruimd))
       .filter((w) => bronActief.has(w.bron))
-      .filter((w) => !fDatum || w.datum.toLowerCase().includes(fDatum))
+      .filter((w) => {
+        if (!van && !tot) return true;
+        // Alleen de datum telt (yyyy-mm-dd); een onbekende datum valt buiten een ingesteld bereik
+        const dag = (w.datum || '').slice(0, 10);
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(dag)) return false;
+        return (!van || dag >= van) && (!tot || dag <= tot);
+      })
       .filter((w) => !fLocatie || (w.locatie || '').toLowerCase().includes(fLocatie));
   }
 
@@ -254,7 +261,7 @@
       render();
     });
   });
-  ['fDatum', 'fLocatie'].forEach((id) =>
+  ['fVan', 'fTot', 'fLocatie'].forEach((id) =>
     document.getElementById(id).addEventListener('input', render));
 
   // Geruimd wijzigen in de tabel → opslaan in de database
