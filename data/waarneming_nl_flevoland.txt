@@ -1,0 +1,130 @@
+# id|datum|waarnemer|locatie|validatie|lat|lon|nauwkeurigheid   (bron: waarneming.nl, soort 8807, activiteit NEST, Flevoland, 2026-04-15 t/m 2026-12-31)
+426839767|2026-11-05 07:47||Dronten - Drieslag (FL)|aannemelijk|52.53021|5.70559|4m
+426744805|2026-11-04||Zeewolde - Horsterwold (FL)|aannemelijk|52.31526|5.45834|25m
+426575623|2026-11-02||Lelystad - Punter (FL)|aannemelijk|52.51835|5.44834|2m
+426492493|2026-11-01 15:07||Almere - Kromslootpark (FL)|aannemelijk|52.34069|5.18257|3m
+426054796|2026-10-29 11:31||Dronten - Drieslag (FL)|aannemelijk|52.52935|5.69940|29m
+426052678|2026-10-29 10:53||Almere-Haven (FL)|aannemelijk|52.33890|5.19925|5m
+426124915|2026-10-29||Almere-Haven (FL)|aannemelijk|52.33884|5.19920|4m
+425940766|2026-10-28 09:35||Lelystad - Overijsselse Hout (FL)|aannemelijk|52.52427|5.51451|onbekend
+425819032|2026-10-26 15:01||Dronten - bebouwing (FL)|aannemelijk|52.51297|5.70753|15m
+425510805|2026-10-23 12:37||Dronten - Van Veldhuizenbos (FL)|aannemelijk|52.52005|5.69664|23m
+425523932|2026-10-23||Almere - Muziekwijk (FL)|aannemelijk|52.36612|5.18201|1m
+425504172|2026-10-23||Dronten - bebouwing (FL)|aannemelijk|52.51300|5.70766|4m
+425389440|2026-10-21 16:46||Ketelmeer - Ketelhaven (FL)|aannemelijk|52.57377|5.75829|5m
+425274775|2026-10-20 17:43||Almere - Paradijsvogelweg e.o. (FL)|aannemelijk|52.37072|5.29863|4m
+424901571|2026-10-17 17:09||Almere - Pampushout-Noordoost (FL)|aannemelijk|52.38285|5.17902|4m
+424873548|2026-10-17 15:32||Zeewolde - Hulkesteinse Bos (FL)|aannemelijk|52.27136|5.42957|5m
+424868101|2026-10-17 14:59||Zeewolde - Hulkesteinse Bos (FL)|aannemelijk|52.27271|5.44206|4m
+424695313|2026-10-16 11:14||Lelystad - Tjalk (FL)|aannemelijk|52.50128|5.46861|4m
+424540210|2026-10-15 16:31||Lelystad - Boswijk (FL)|aannemelijk|52.51003|5.49780|4m
+424454740|2026-10-14 17:27||Lelystad - Natuurpark Lelystad (FL)|aannemelijk|52.48691|5.52787|15m
+424220904|2026-10-12 18:54||Zeewolde - Kop van de Kuierbaan (FL)|aannemelijk|52.33881|5.52928|3m
+424191649|2026-10-12 15:49||Zeewolde - Horsterwold (FL)|aannemelijk|52.31500|5.45837|8m
+424234086|2026-10-12 13:08||Almere - Pampushout (FL)|aannemelijk|52.35996|5.16012|7m
+423815482|2026-10-08 18:18||Lelystad - Archipel (FL)|aannemelijk|52.50870|5.49189|3m
+423831687|2026-10-08 17:50||Zeewolde - bebouwing (FL)|aannemelijk|52.33395|5.51653|15m
+423806654|2026-10-08 16:33||Oostvaardersplassen - Knardijk / Begin Praamweg / Spoorviaduct (FL)|aannemelijk|52.44980|5.42775|5m
+423701743|2026-10-07 15:24||Lelystad - Hollandse Hout (FL)|aannemelijk|52.45679|5.42959|4m
+423695584|2026-10-07 14:55||Lelystad - Hollandse Hout (FL)|aannemelijk|52.46827|5.42973|16m
+423686089|2026-10-07||Zeewolde - bebouwing (FL)|aannemelijk|52.33364|5.51800|15m
+423508773|2026-10-05 18:39||Almere-Hout (FL)|met bewijs|52.33652|5.30260|4m
+424691627|2026-10-05 16:41||Rutten (FL)|aannemelijk|52.80814|5.69870|5m
+423175576|2026-10-03 15:24||Lelystad - Waterwijk (FL)|aannemelijk|52.49669|5.48822|4m
+423177299|2026-10-03 15:23||Lelystad - Waterwijk (FL)|aannemelijk|52.49671|5.48828|4m
+423175451|2026-10-03 12:15||Lelystad - Hollandse Hout (FL)|aannemelijk|52.48338|5.42877|4m
+423064820|2026-10-02 17:02||Zeewolde - bebouwing (FL)|aannemelijk|52.32915|5.54256|5m
+423064471|2026-10-02 15:54||Zeewolde - bebouwing (FL)|aannemelijk|52.32913|5.51805|5m
+422993845|2026-10-02 10:46||Almere - Molenbuurt (FL)|met bewijs|52.40141|5.27491|4m
+422954472|2026-10-01 19:26||Almere-Haven (FL)|aannemelijk|52.33452|5.23532|4m
+422954167|2026-10-01 19:26||Almere-Haven (FL)|aannemelijk|52.33451|5.23536|4m
+422946514|2026-10-01 18:05||Lelystad - Hollandse Hout (FL)|aannemelijk|52.48094|5.42720|4m
+422946563|2026-10-01 16:11||Lelystad - Hollandse Hout (FL)|aannemelijk|52.48064|5.42257|4m
+422914721|2026-10-01 14:05||Lelystad - Hollandse Hout (FL)|met bewijs|52.48355|5.43559|onbekend
+422913993|2026-10-01 14:00||Lelystad - Hollandse Hout (FL)|aannemelijk|52.48470|5.43272|3m
+422841929|2026-09-30 18:32||Lelystad - Landerijen (FL)|aannemelijk|52.49823|5.51275|3m
+422816111|2026-09-30 15:38||Lelystad - Gelderse Hout (FL)|aannemelijk|52.50567|5.51281|4m
+422792848|2026-09-30 12:34||Biddinghuizen - Bremerberg (FL)|aannemelijk|52.42022|5.70156|233m
+422736779|2026-09-29 21:10||Zeewolde - Hulkesteinse Bos (FL)|aannemelijk|52.27177|5.42998|5m
+422736722|2026-09-29 21:07||Zeewolde - Hulkesteinse Bos (FL)|aannemelijk|52.27103|5.43683|5m
+422606731|2026-09-28 18:57||Lelystad - Noordersluis (FL)|aannemelijk|52.49874|5.43605|4m
+422034882|2026-09-24||Swifterbant (FL)|aannemelijk|52.57124|5.63724|4m
+422345669|2026-09-23 19:19||Almere-Haven - Windhoektuinen (FL)|aannemelijk|52.33157|5.25642|5m
+421957924|2026-09-23 19:10||Almere - Bloemenbuurt (FL)|aannemelijk|52.38590|5.28706|5m
+421922318|2026-09-23 15:36||Zeewolde - Hulkesteinse Bos (FL)|aannemelijk|52.26659|5.41982|4m
+421890075|2026-09-23 12:22||Swifterbant (FL)|aannemelijk|52.56494|5.63790|15m
+421906184|2026-09-22 14:01||Swifterbant (FL)|aannemelijk|52.56570|5.63770|29m
+421804573|2026-09-22||Swifterbant (FL)|met bewijs|52.57177|5.63661|4m
+421703021|2026-09-21 18:10||Dronten - Wisentbos (FL)|aannemelijk|52.53018|5.68863|5m
+421619633|2026-09-21 07:50||Dronten - bebouwing (FL)|aannemelijk|52.51977|5.71408|4m
+421346920|2026-09-19 12:04||Swifterbant (FL)|aannemelijk|52.57239|5.65944|5m
+421159444|2026-09-17 17:02||Emmeloord (FL)|aannemelijk|52.70731|5.74543|4m
+421083605|2026-09-16 17:50||Dronten - bebouwing (FL)|aannemelijk|52.53192|5.72543|5m
+421083577|2026-09-16 15:57||Dronten - bebouwing (FL)|aannemelijk|52.52646|5.72888|4m
+421083537|2026-09-16 14:23||Dronten - bebouwing (FL)|aannemelijk|52.51801|5.72547|4m
+420832497|2026-09-14 19:35||Lelystad - Bos Vlotgrasweg (FL)|aannemelijk|52.47606|5.52507|5m
+420801835|2026-09-14 17:32||Lelystad - Natuurpark Lelystad (FL)|aannemelijk|52.48535|5.54192|5m
+420682630|2026-09-12 17:40||Lelystad - Lage Vaartbos (FL)|aannemelijk|52.50402|5.53876|5m
+420682527|2026-09-12 16:40||Lelystad - Gelderse Hout (FL)|aannemelijk|52.50933|5.52613|5m
+420279101|2026-09-10 16:28||Almere - Kathedralenbos / De Groene Kathedraal (FL)|aannemelijk|52.31776|5.32987|4m
+420170625|2026-09-09 17:35||Lelystad - Atolwijk (FL)|aannemelijk|52.51305|5.50309|5m
+420130234|2026-09-07 19:18||Dronten - Ketelweg e.o. (FL)|aannemelijk|52.54327|5.78832|4m
+420130109|2026-09-07 14:16||Lelystad - Boswijk (FL)|aannemelijk|52.50728|5.50262|5m
+419853380|2026-09-07 08:08||Almere-Haven (FL)|met bewijs|52.34396|5.19818|18m
+419642500|2026-09-05 18:53||Dronten - De Abbert (FL)|aannemelijk|52.50459|5.83828|4m
+419422905|2026-09-03 15:31||Emmeloord (FL)|met bewijs|52.70096|5.75964|4m
+419376163|2026-09-02 22:17||Almere - Almeerderhout (FL)|aannemelijk|52.34019|5.25687|5m
+419096221|2026-09-01 14:29||Lelystad - Boswijk (FL)|aannemelijk|52.50051|5.49455|4m
+419018250|2026-08-31 18:07||Emmeloord (FL)|aannemelijk|52.71892|5.76264|5m
+418869543|2026-08-30 14:38||Zeewolde - De Eemhof (FL)|aannemelijk|52.26039|5.39948|7m
+418717788|2026-08-28 23:41||Lelystad - Atolwijk (FL)|aannemelijk|52.51322|5.48038|4m
+418661633|2026-08-28 17:35||Almere - Tuinpark Waterland (FL)|aannemelijk|52.33465|5.26026|5m
+418301260|2026-08-24 15:58||Biddinghuizen - Biddingbos (FL)|aannemelijk|52.44809|5.68874|5m
+418301266|2026-08-24 12:10||Biddinghuizen (FL)|aannemelijk|52.45184|5.69337|5m
+417981035|2026-08-23 18:55||Lelystad - Boswijk (FL)|aannemelijk|52.51005|5.49796|4m
+417535119|2026-08-20 16:52||Emmeloord (FL)|met bewijs|52.70065|5.75932|5m
+417442122|2026-08-19 19:57||Lelystad - Zuigerplasbos (FL)|met bewijs|52.53551|5.46255|5m
+416503697|2026-08-13 15:26||Lelystad - Sportpark / Stadscamping (FL)|met bewijs|52.52572|5.50793|5m
+416339014|2026-08-12 18:02||Nagele (FL)|aannemelijk|52.64925|5.72879|5m
+416338277|2026-08-12 17:56||Nagele (FL)|aannemelijk|52.64881|5.72697|5m
+416279435|2026-08-12 11:21||Ens - Zwartemeerweg e.o. (FL)|aannemelijk|52.63495|5.83866|5m
+415882966|2026-08-09 19:50||Lelystad - Zuigerplasbos (FL)|met bewijs|52.53136|5.45879|5m
+415671541|2026-08-08 17:20||Lelystad - Atolwijk (FL)|met bewijs|52.51173|5.49548|5m
+415338263|2026-08-06 15:35||Lelystad - Gelderse Hout (FL)|met bewijs|52.50651|5.51646|4m
+415149922|2026-08-05 14:26||Lelystad - Zuigerplasbos (FL)|met bewijs|52.52788|5.46612|5m
+414883177|2026-08-03 20:34||Zeewolde - Bosruiterweg e.o. (FL)|met bewijs|52.34468|5.48636|2m
+414843386|2026-08-03 16:28||Lelystad - Zuigerplasbos (FL)|met bewijs|52.53037|5.46419|5m
+414819646|2026-08-03 13:46||Dronten - bebouwing (FL)|met bewijs|52.51505|5.70504|4m
+413959572|2026-07-29 19:01||Lelystad - Zuiderzeewijk (FL)|aannemelijk|52.52582|5.49789|5m
+413543505|2026-07-27 13:59||Almere - Oostvaardersbuurt (FL)|aannemelijk|52.40949|5.29632|4m
+413432494|2026-07-26 19:11||Lelystad - Tjalk (FL)|met bewijs|52.50175|5.46807|5m
+413413269|2026-07-26 17:20||Lelystad - Botter (FL)|met bewijs|52.50551|5.46902|4m
+413371850|2026-07-26 14:06||Lelystad - Archipel (FL)|met bewijs|52.50877|5.49214|4m
+413218264|2026-07-25 17:39||Lelystad - Atolwijk (FL)|met bewijs|52.51182|5.49525|4m
+412962413|2026-07-24 14:24||Lelystad - Boswijk (FL)|met bewijs|52.50758|5.49719|7m
+412811452|2026-07-23 14:06||Lelystad - Punter (FL)|met bewijs|52.51841|5.44910|onbekend
+412701734|2026-07-22 21:33||Zeewolde - bebouwing (FL)|met bewijs|52.33648|5.53590|5m
+410527627|2026-07-10 17:50||Dronten - bebouwing (FL)|met bewijs|52.51604|5.70829|7m
+409717433|2026-07-07 11:37||Almere-Hout (FL)|met bewijs|52.34418|5.30062|4m
+408840195|2026-07-03 14:38||Dronten - De Abbert (FL)|met bewijs|52.49589|5.83792|29m
+407658886|2026-06-27 15:15||Almere - Stedenwijk (FL)|met bewijs|52.36734|5.20516|4m
+406939178|2026-06-23 21:00||Almere - Muziekwijk (FL)|met bewijs|52.37485|5.19085|7m
+407028287|2026-06-23 15:43||Almere - Muiderhoek (FL)|met bewijs|52.37411|5.11946|233m
+406431081|2026-06-21 13:42||Emmeloord (FL)|met bewijs|52.71506|5.75065|4m
+404014416|2026-06-09 12:07||Zeewolde - bebouwing (FL)|met bewijs|52.33765|5.51388|4m
+411120075|2026-06-03 17:16||Zeewolde - bebouwing (FL)|met bewijs|52.32566|5.53015|5m
+401349956|2026-05-25 21:30||Lelystad - Atolwijk (FL)|met bewijs|52.51742|5.49722|4m
+399743396|2026-05-19 16:37||Biddinghuizen - Biddingbos (FL)|met bewijs|52.44630|5.68639|4m
+398762971|2026-05-16||Almere - Tureluurweg e.o. (FL)|met bewijs|52.31987|5.32838|22m
+398223150|2026-05-12 18:48||Almere-Hout (FL)|met bewijs|52.33996|5.30835|18m
+397416292|2026-05-09 17:48||Almere - Stedenwijk (FL)|met bewijs|52.36457|5.20549|5m
+395527737|2026-05-01 07:26||Swifterbant - Swifterbos (FL)|met bewijs|52.56796|5.62797|1m
+395400380|2026-04-30 12:55||Lelystad - Jagersveld / Groene Velden (FL)|met bewijs|52.52909|5.50278|29m
+395399899|2026-04-30 12:55||Dronten - Zeeasterweg Oost e.o. (FL)|met bewijs|52.50953|5.61951|116m
+394070122|2026-04-23 19:24||Lelystad - Jagersveld / Groene Velden (FL)|met bewijs|52.53191|5.49140|100m
+393097788|2026-04-18 14:16||Emmeloord (FL)|met bewijs|52.70178|5.76776|4m
+392903687|2026-04-17 15:57||Almere-Haven (FL)|met bewijs|52.33548|5.23410|234m
+392893540|2026-04-17 15:20||Lelystad - Karveel (FL)|met bewijs|52.52227|5.45253|onbekend
+392890483|2026-04-17 14:38||Lelystad - Karveel (FL)|met bewijs|52.52225|5.45249|onbekend
+392939845|2026-04-16 16:00||Lelystad - Karveel (FL)|met bewijs|52.52269|5.45151|onbekend
+427261863|2026-11-09 16:04||Zeewolde - Horsterwold (FL)|Onbekend|52.31444|5.45371|10m

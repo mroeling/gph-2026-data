@@ -1,0 +1,59 @@
+# Adressen uit kolom B (Locatie) van "Ruimingen TF" voor regels zonder coördinaat: regelnummer;adres
+8;Eelerbergstraat 12, 1333 ZW Almere
+9;papiermolen 14, 8311 BE Espel
+10;Acacialaan 13, 8302 AK Emmeloord
+11;Divertimentostraat 5, 1312 EA Almere
+13;Sportlaan 91, 1333 SE Almere
+14;Pilotenweg 8A, 8303 EJ Emmeloord
+16;Sportlaan 12, 8256 CE Biddinghuizen
+18;Het Korhoen 61, 8251 MJ Dronten
+21;Sportmark 108, 1355 KH Almere
+22;De Volte 10, 8252GB Dronten
+24;Almereweg 54, 3891 ZP Zeewolde
+25;Spijkweg 15, 8256 RJ Biddinghuizen
+26;Regentesseweg, Almere Centrum
+27;Langshof 29, 1353 GC Almere
+28;De Barrage 41, 8252 HP Dronten
+29;Haviklaan 20, 1343 BC Almere
+31;Punter 10 6, 8242 DC Lelystad
+34;Maandenweg 28, 1335 KC Almere
+38;Vanillestraat 6, 1314 KE Almere
+41;De Barrage 41, 8252 HP Dronten
+47;Neptunusweg 6, 8251 AJ Dronten
+48;W.Dreesweg, Almere Stad
+52;Het Plankenpad 48, 8255 HG Swifterbant
+58;Valetaweg 27, Almere
+59;Serenadestraat 5, 1312 EK Almere
+63;kuinderweg 19, Emmeloord
+65;Breskensweg 5, 1324 KE Almere
+69;W.Dreesweg, Almere Stad
+71;Vogelwikke 28, Swifterbant
+78;Dasselaarweg, Zeewolde
+81;De Wolken, Dronten
+87;Wisentweg 25, Dronten
+96;Eemhof, Zeewolde
+98;Punter, Zeewolde
+107;Jimi Hendrixstraat 38, Almere Stad
+115;De Wierse 117, Biddinghuizen
+116;Pasolinistraat 55, 1325 SM Almere
+118;Banterweg 17, Bant
+134;Enserweg 7, Ens
+137;Panfluitstraat 24, 1312 PJ Almere
+141;Windbaan 119, Zeewolde
+144;Kofschip, Lelystad
+149;Noorderbaan 1A, Biddinghuizen
+150;Versterkerstraat 4B, Almere Stad
+155;Ramsweg 3, 8307 RK Ens
+156;bosgebied Pampushout, Almere Poort
+157;langs de vaart, Emmeloord
+158;Sportlaan, Emmeloord
+162;Kokkelweg 8, Biddinghuizen
+163;Natuurpark Lelystad
+171;Lucernehof 94, Biddinghuizen
+173;Lommerjik, Lelystad
+179;Kofschip, Lelystad
+181;Klarinetstraat 54, Almere Stad
+182;Langezand moestuin de Woelakkers, Zeewolde
+189;Schumannstraat, Almere Stad
+194;Stobbenweg 18, 8251 PX Dronten
+199;Gemaalweg, Rutten

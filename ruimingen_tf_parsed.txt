@@ -1,0 +1,206 @@
+2;0;0;395527737;52.56796 5.62797;Swifterbos, Swifterbant
+3;0;0;396532159;;Heermoes 9, 3892 AV Zeewolde
+4;0;0;399810635;;Vossendal 30, 3892 VL Zeewolde
+5;0;0;400295081;;Eemhof, Zeewolde
+6;0;0;411120075;;Gildenveld 29, 3892 DD Zeewolde
+7;0;0;405695530;;Tarwelaan 44, 3893 GM Zeewolde
+8;0;0;;;Eelerbergstraat 12, 1333 ZW Almere
+9;0;0;;;papiermolen 14, 8311 BE Espel
+10;0;0;;;Acacialaan 13, 8302 AK Emmeloord
+11;0;0;;;Divertimentostraat 5, 1312 EA Almere
+12;0;0;407213903;;Hemmeland 8, Lelystad
+13;0;0;;;Sportlaan 91, 1333 SE Almere
+14;0;0;;;Pilotenweg 8A, 8303 EJ Emmeloord
+15;0;0;408840195;;Stobbenweg 23, 8251 PX Dronten
+16;0;0;;;Sportlaan 12, 8256 CE Biddinghuizen
+17;0;0;409510527;;Tautenburg, Landerijen Lelystad
+18;0;0;;;Het Korhoen 61, 8251 MJ Dronten
+19;0;0;410087306;;Kokkelweg, Biddingbos, Binddinghuizen
+20;0;0;410125959;;Breedenborgstraat 3, 1333 VS Almere
+21;0;0;;;Sportmark 108, 1355 KH Almere
+22;0;0;;;De Volte 10, 8252GB Dronten
+23;0;0;411181270;;Sleedoorn 19, 3892 CN Zeewolde
+24;0;0;;;Almereweg 54, 3891 ZP Zeewolde
+25;0;0;;;Spijkweg 15, 8256 RJ Biddinghuizen
+26;0;0;;;Regentesseweg Almere Centrum
+27;0;0;;;Langshof 29, 1353 GC Almere
+28;0;0;;;De Barrage 41, 8252 HP Dronten
+29;0;0;;;Haviklaan 20, 1343 BC Almere
+30;0;0;412701734;;Lagezand, Zeewolde
+31;0;0;;;Punter 10 6, 8242 DC Lelystad
+32;0;0;412962413;;De Scheren 2, 8212 EA Lelystad
+33;0;0;413218264;;Park Ontmoetingskerk, Lelystad
+34;0;0;;;Maandenweg 28, 1335 KC Almere
+35;0;0;413371850;;Archipel 37, pad - Lelystad
+36;0;0;413413269;;Botter 12/Botter 13 - Lelystad
+37;0;0;413432494;;Tjalk 17/Tjalk 34 - Lelystad
+38;0;0;;;Vanillestraat 6, 1314 KE Almere
+39;0;0;413959572;;Langezand 20, Lelystad
+40;0;0;414883177;;Bosruiterweg 25-79, 3897 LV Zeewolde
+41;0;0;;;De Barrage 41, 8252 HP Dronten
+42;0;0;414843386;;Zuigerplasbos, Lelystad
+43;0;0;414843386;52.53037 5.46419;Zuigerplasbos, Lelystad
+44;0;1;415149922;;Zuigerplasbos, Lelystad
+45;0;0;;52.37576 5.21041;Keizerstraat en Prinsenpad Almere Stad
+46;0;1;415338263;;Gelderse Hout, Lelystad
+47;0;0;;;Neptunusweg 6, 8251 AJ Dronten
+48;0;0;;;W.Dreesweg, Almere Stad
+49;0;0;415832405;;De Scheren, Lelystad
+50;0;0;415671541;52.51173 5.49548;Rand Atolwijk, Lelystad
+51;0;1;415882966;52.53136 5.45879;Zuigerplasbos, Lelystad
+52;0;0;;;Het Plankenpad 48, 8255 HG Swifterbant
+53;0;0;416018304;;Houtribdreef, Lelystad
+54;0;1;416339014;;achter Lucernehof, Nagele
+55;0;0;416279435;;Ens, DrieTorensweg
+56;0;0;416338277;;achter Gerstenhof, Nagele
+57;0;0;416503697;;Lelystad sportpark
+58;0;0;;;Valetaweg 27, Almere
+59;0;0;;;Serenadestraat 5, 1312 EK Almere
+60;0;0;417189898;52.52015 5.72630;De Ketting 16, 8251 LD Dronten
+61;0;0;417189797;52.51780 5.72221;De Boeg, Dronten
+62;0;1;417306726;;Lage Vaartbos, Lelystad
+63;0;0;;;kuinderweg 19, Emmeloord
+64;0;1;417442122;;Zuigerplasbos, Lelystad
+65;0;0;;;Breskensweg 5, 1324 KE Almere
+66;0;0;;;Spijkweg 36, Biddinghuizen
+67;0;0;418833248;;Breskensweg 5, 1324 KE Almere
+68;0;0;417535119;;Diemenlaan, Emmeloord
+69;0;0;;;W.Dreesweg, Almere Stad
+70;0;0;;52.37856 5.22311;Randstad 21 20, 1314 BM Almere
+71;0;0;;;Vogelwikke 28, Swifterbant
+72;0;0;417934396;;Gitaarstraat, Almere Stad
+73;0;0;417981035;;Kustendreef, Lelystad
+74;0;0;420682359;52.45298 5.68012;Biddingbos, Biddinghuizen
+75;0;0;418301266;;Koolzaadhof, Biddinghuizen
+76;0;0;418301260;;Biddingbos, Biddinghuizen
+77;0;0;;;Gaffelstraat, Dronten
+78;0;0;;;Dasselaarweg, Zeewolde
+79;0;0;418741850,418717788;52.51322 5.48038;Kustrif, Atolwijk, Lelystad
+80;0;0;426603522,418661633;52.33465 5.26026;Tuinpark Waterland, Stevenspad, Almere H
+81;0;0;;;kruising van De Wolken en het Noorderlic
+82;0;0;418869543;;Eemhof, Zeewolde
+83;0;0;419018250;52.71892 5.76264;Sportlaan, Emmeloord
+84;0;0;419031897;52.72140 5.75426;Looppad bij Banterweg, Emmeloord
+85;0;0;419096221;;Griend, Waterwijk Lelystad
+86;0;1;419376163;;Almeerderhout, Almere Haven
+87;0;0;;;Wisentweg 25, Dronten
+88;0;0;419853380;52.34396 5.19818;Woudlaar 26, Almere-Haven
+89;0;0;420001353;52.34402 5.19811;Woudlaar 30, Almere-Haven
+90;0;0;420130109;52.50728 5.50262;Beukenhof, Lelystad
+91;0;0;420130234;52.54327 5.78832;Ketelweg 29/31, 8251 PP Dronten
+92;0;0;420170625;;Plantage, Atolwijk, Lelystad
+93;0;1;420279101;;Kathedralenbos, Almere Oosterwold
+94;0;1;420682630;52.50402 5.53876;Lage Vaartbos, Lelystad
+95;0;1;420682527;52.50933 5.52613;Ons Genoegen Lelystad, Gelderse Hout Lel
+96;0;0;;;Eemhof, Zeewolde
+97;0;0;417535119;;Diemenlaan, Emmeloord
+98;0;0;;;Punter, Zeewolde
+99;0;0;420801835;;Natuurpark Lelystad
+100;0;0;420832497;52.47606 5.52507;Natuurpark Lelystad
+101;0;0;421083537;;De Killick, Dronten
+102;0;0;421083577;;Het Spectrum, Dronten
+103;0;0;421083605;;De Morinel 25, 8251 HT Dronten
+104;0;0;421159444;52.70731 5.74543;Achter drJZ, Zwarteveenweg, Emmeloord
+105;0;0;421159359;52.70675 5.74230;Kometenlaan, Emmeloord
+106;0;1;421346920;;Tarpanweg/Bovenstroom, Swifterbant
+107;0;0;;;Jimi Hendrixstraat 38, Almere Stad
+108;0;0;421619633;52.519775 5.714083;De Komeet, Dronten
+109;0;0;421703021;52.53018 5.68863;Achter Sint Margarethagilde 27, Dronten
+110;0;0;421875206;;Bosweg, volkstuin Swifterbant
+111;0;0;421906184;;Sneeuwklokjesveld 12, Swifterbant
+112;0;0;421922318;52.26659 5.41982;Hulkesteinse Bos, Zeewolde
+113;0;0;421957924;52.38590 5.28706;Jasmijnstraat, Almere Buiten
+114;0;0;422345669;52.33157 5.25642;Ludenbos 4, Almere Haven
+115;0;0;;;De Wierse 117, Biddinghuizen
+116;0;0;;;Pasolinistraat 55, 1325 SM Almere
+117;0;0;422606731;52.49874 5.43605;Havenweg 25-5, Lelystad
+118;0;0;;;Banterweg 17 Bant
+119;0;0;422736722;;Flevo Natuurpark, Zeewolde
+120;0;1;422816111;;Gelderse Hout, Lelystad
+121;0;0;422841929;;Bingerden, Lelystad
+122;0;1;422736779;;net naast Flevo Natuurpark, Zeewolde
+123;0;0;;;Gaffelstraat, Dronten
+124;0;0;421083605;;De Morinel 25, 8251 HT Dronten
+125;0;0;422913993;;Hollandse Hout, Lelystad
+126;0;0;422914721;;Hollandse Hout, Lelystad
+127;0;0;422946563;;Hollandse Hout, Lelystad
+128;0;0;422946514;;Hollandse Hout, Lelystad
+129;0;0;422954167;;Schapenmeent 45, Almere Haven
+130;0;0;419096221;;Griend, Waterwijk Lelystad
+131;0;0;;52.37856 5.22311;Randstad 21 20, 1314 BM Almere
+132;0;0;423064820;52.32915 5.54256;Dalkruid 14, Zeewolde
+133;0;0;423064471;52.32913 5.51805;Grote Haag 67, Zeewolde
+134;0;0;;;Enserweg 7 Ens
+135;0;0;423175576;;Noordzeestraat, Lelystad
+136;0;0;423175451;;Hollandse Hout, Lelystad
+137;0;0;;;Panfluitstraat 24, 1312 PJ Almere
+138;1;0;423309031;;G.T. Rietveldstraat, Almere Buiten
+139;0;0;;;Zenderstraat 27, Almere Stad
+140;0;0;423492439;52.80815 5.69884;Laveldel/Gemaalweg, Rutten
+141;0;0;;;Windbaan 119, Zeewolde
+142;0;0;423515723;;golfbaan, jol 2, Zeewolde
+143;0;0;423508773;;Wintertalinglaan 8, Almere Haven
+144;0;0;;;Kofschip, Lelystad
+145;0;1;423701743;52.45679 5.42959;Hollandse Hout, Lelystad
+146;0;0;423695584;52.46827 5.42973;Hollandse Hout, Lelystad
+147;0;0;423686089;52.33364 5.51800;Cumulus 63, Zeewolde
+148;0;0;423815482;52.50870 5.49189;Archipel 37, pad - Lelystad
+149;0;0;;;Noorderbaan 1A, Biddinghuizen
+150;0;0;;;Versterkerstraat 4B, Almere Stad
+151;0;0;423806654;;Knardijk, Oostvaardersplassen
+152;0;0;423960480;;Keteldiep, Zeewolde
+153;0;0;423961045;;Meidoorn, tegenover 35, Zeewolde
+154;0;0;423904947;52.45148 5.68098;Biddingbos, Biddinghuizen
+155;0;0;;;Ramsweg 3, 8307 RK Ens
+156;0;0;;;bosgebied Pampushout, Almere Poort
+157;1;0;;;langs de vaart, Emmeloord
+158;0;0;;;Sportlaan, Emmeloord
+159;0;1;424191649;;Flediteweg, Zeewolde
+160;0;0;424220904;;achter Beekvliet, Zeewolde
+161;0;0;424380047;;Sportpad/Woldlaan, Zeewolde
+162;0;0;;;Kokkelweg 8, Biddinghuizen
+163;0;0;;;Natuurpark Lelystad
+164;0;0;424454740;52.48691 5.52787;Natuurpark Lelystad
+165;1;0;424534489;;Eemhof, Zeewolde
+166;0;0;424540210;;Kustendreef, Lelystad
+167;1;0;424539537;;Muziekdreef, Almere Stad
+168;0;0;424692996;;Klutenpad, Wellerwaard
+169;0;0;;52.32075 5.54222;Kastanjeweg, Zeewolde
+170;0;0;424695313;;Tjalk 19/Tjalk 34 - Lelystad
+171;0;0;;;Lucernehof 94, Biddinghuizen
+172;0;0;421403236;;smaragd 18, Swifterbant
+173;0;0;;;Lommerjik, Lelystad (onbevestigd)
+174;1;0;419642500;;Stobbenweg 17, 8251 PX Dronten
+175;1;0;424868101;;Hulkesteinse Bos, Zeewolde
+176;0;1;424873548;;Hulkesteinse Bos, Zeewolde
+177;1;0;424901571;;Pampushout, Almere Stad
+178;0;1;422792848;52.42022 5.70156;Bremerberg, Biddinghuizen
+179;0;0;;;Kofschip, Lelystad
+180;0;0;425274775;;William Turnerstraat 28, Almere Oosterpo
+181;0;0;;;Klarinetstraat 54, Almere Stad
+182;0;0;;;Langezand moestuin de Woelakkers, Zeewol
+183;0;0;425504172;;Landmaten/De Oxer, Dronten
+184;0;0;425389440;;Boslaan 87, Dronten/Ketelhaven
+185;0;0;;52.51239 5.49674;Kreek, Lelystad
+186;0;0;425510805;52.52005 5.69664;Van Veldhuizenbos, Dronten
+187;0;0;425523932;52.36612 5.18201;Charlie Parkerstraat, Almere Stad
+188;0;0;425613246;;Hertenkamplaan, Swifterbant
+189;0;0;;;Schumannstraat , Almere Stad
+190;1;0;425787592;52.51987 5.71875;Gaffelstraat, Dronten
+191;1;0;426052678;;Hoekwierde 106, Almere Haven
+192;1;0;425886606;;golfbaan, golflaan, Zeewolde
+193;1;0;425940766;52.52427 5.51451;Paardenbos, achter begraafplaats, Lelyst
+194;1;0;;;Stobbenweg 18, 8251 PX Dronten
+195;1;0;426012602;52.27615 5.44826;Hulkesteinse Bos, Zeewolde
+196;1;0;426054796;52.52935 5.69940;Dronterpad, Dronten
+197;1;0;;52.34076 5.18261;Nabij De Urn, Kromslootpark, Almere Have
+198;1;0;426575623;52.51835 5.44834;Punter 15-04, Lelystad
+199;1;0;;;Gemaalweg, Rutten
+200;1;0;426729761;52.42387 5.26723;Oostvaardersbos, Almere Buiten
+201;1;0;;52.37366 5.21404;Hoogezandstraat, Almere Stad
+202;1;0;;52.52848 5.70257;Arendschelling 2, 8253 CD Dronten
+203;1;0;426839767;52.53021 5.70559;Leeuwendaalder/Krabbelaarspad, Dronten
+204;1;0;426870948;52.53133 5.70362;Arendsdaalder/Krabbelaarspad, Dronten
+205;1;0;;52.40531 5.27225;Bakkenzuigerstraat/Jaap Edenpad, Almere 
+206;1;0;;52.64036 5.71849;IJsbaan, Nagele
+207;1;0;;52.54204 5.84919;Vossemeerdijk, Dronten

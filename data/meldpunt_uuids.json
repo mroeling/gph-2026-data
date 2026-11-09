@@ -1,0 +1,514 @@
+{
+  "053f5a68-e66e-44fd-9015-72a3b3ba7435": {
+    "lat": 52.48390022213638,
+    "lon": 5.5290414256421725,
+    "spottedAt": "2026-10-14",
+    "status": "removed",
+    "gemeente": "Lelystad",
+    "adres": null
+  },
+  "09f114f1-0a4f-48fa-9531-21b1d4d156b3": {
+    "lat": 52.52936372208536,
+    "lon": 5.642007906125451,
+    "spottedAt": "2026-09-03",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "15d27b45-ca56-492a-9c89-d344a18c540c": {
+    "lat": 52.36625880551926,
+    "lon": 5.252048795683446,
+    "spottedAt": "2026-08-16",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "194b8cce-9206-49d8-9a1d-a60daf73cbd4": {
+    "lat": 52.33436738855447,
+    "lon": 5.2384717984703615,
+    "spottedAt": "2026-10-05",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "1a474121-de7e-488a-b451-c73aa589aab0": {
+    "lat": 52.376008882500756,
+    "lon": 5.208370039658738,
+    "spottedAt": "2026-07-28",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "2157b047-b230-4390-b366-94da2e8dc64f": {
+    "lat": 52.523318590588154,
+    "lon": 5.449754163392597,
+    "spottedAt": "2026-08-28",
+    "status": "removed",
+    "gemeente": "Lelystad",
+    "adres": null
+  },
+  "23b00c7e-1357-46d9-8181-41707fd4f489": {
+    "lat": 52.38366087454488,
+    "lon": 5.270449200431373,
+    "spottedAt": "2026-06-17",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "26931af1-46b5-43c6-a78f-e4067b021fa1": {
+    "lat": 52.31922144635583,
+    "lon": 5.537892885340836,
+    "spottedAt": "2026-10-16",
+    "status": "pending",
+    "gemeente": "Zeewolde",
+    "adres": null
+  },
+  "3550c454-7ac1-4f5f-9ae0-5d7417412969": {
+    "lat": 52.56818859979311,
+    "lon": 5.637941994769382,
+    "spottedAt": "2026-10-24",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "3aed6cc5-58a3-4cb9-813d-7c04e5d264f7": {
+    "lat": 52.355732823602466,
+    "lon": 5.198834605833595,
+    "spottedAt": "2026-08-19",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "45e7699c-5945-4669-9d94-38c08f1e9935": {
+    "lat": 52.44902907481324,
+    "lon": 5.678711414818806,
+    "spottedAt": "2026-07-05",
+    "status": "pending",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "499cb311-e059-44b4-8b7d-263efceeaad2": {
+    "lat": 52.33009068756851,
+    "lon": 5.510740204697984,
+    "spottedAt": "2026-10-05",
+    "status": "removed",
+    "gemeente": "Zeewolde",
+    "adres": null
+  },
+  "523feb55-5849-408f-8f74-58221b57a7e7": {
+    "lat": 52.336130234215915,
+    "lon": 5.532082794761529,
+    "spottedAt": "2026-10-21",
+    "status": "pending",
+    "gemeente": "Zeewolde",
+    "adres": null
+  },
+  "53e30dea-7d01-4ce0-8a76-918358701fd6": {
+    "lat": 52.33369127126133,
+    "lon": 5.532652092983389,
+    "spottedAt": "2026-07-15",
+    "status": "removed",
+    "gemeente": "Zeewolde",
+    "adres": null
+  },
+  "64999729-8528-47ee-899e-96cf4c1b6158": {
+    "lat": 52.340145437424425,
+    "lon": 5.235211180222036,
+    "spottedAt": "2026-07-11",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "674d0438-20cf-4073-9348-7c9b1df352e9": {
+    "lat": 52.34032175731464,
+    "lon": 5.197373238648543,
+    "spottedAt": "2026-10-27",
+    "status": "pending",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "6b00f805-1235-470a-822f-9b71855273ec": {
+    "lat": 52.324745352185346,
+    "lon": 5.510068274014694,
+    "spottedAt": "2026-10-27",
+    "status": "pending",
+    "gemeente": "Zeewolde",
+    "adres": null
+  },
+  "6e57972c-e184-45ae-a256-66bafd07e882": {
+    "lat": 52.37894267214622,
+    "lon": 5.211195359588127,
+    "spottedAt": "2026-08-06",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "7267e50f-7fa5-47c9-8862-c3c1870159ea": {
+    "lat": 52.379599440317854,
+    "lon": 5.18640509589803,
+    "spottedAt": "2026-08-16",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "7587d925-7ad5-408c-936e-33d560a0bddb": {
+    "lat": 52.523532543709294,
+    "lon": 5.4865422551779695,
+    "spottedAt": "2026-06-28",
+    "status": "removed",
+    "gemeente": "Lelystad",
+    "adres": null
+  },
+  "76681113-9b4f-437e-baa2-5109bb5f2129": {
+    "lat": 52.38847180441761,
+    "lon": 5.26191119515579,
+    "spottedAt": "2026-06-29",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "79ad8851-4aab-45bb-a858-294a6d93d038": {
+    "lat": 52.57173845716247,
+    "lon": 5.645735860295567,
+    "spottedAt": "2026-08-09",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "7b8066e7-4485-45c7-9e92-5bb13e9cb031": {
+    "lat": 52.51408348090117,
+    "lon": 5.495568399441854,
+    "spottedAt": "2026-09-02",
+    "status": "removed",
+    "gemeente": "Lelystad",
+    "adres": null
+  },
+  "7f072d40-da34-496a-bead-2ecf77adfa4d": {
+    "lat": 52.52263237600546,
+    "lon": 5.712707686709902,
+    "spottedAt": "2026-08-06",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "8009adc8-245c-4b6c-9ed9-fc99ee693811": {
+    "lat": 52.462053758202686,
+    "lon": 5.699594124630244,
+    "spottedAt": "2026-10-08",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "82b95b0f-5ced-4f15-9723-1e1e4c9f0dab": {
+    "lat": 52.5258811776912,
+    "lon": 5.492629334424895,
+    "spottedAt": "2026-07-29",
+    "status": "rejected",
+    "gemeente": "Lelystad",
+    "adres": null
+  },
+  "87d60611-dbfe-4271-a55e-55e02a521eaf": {
+    "lat": 52.38223724183092,
+    "lon": 5.225837047268407,
+    "spottedAt": "2026-08-21",
+    "status": "linked",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "87fcfd9d-8bda-4e1f-b378-b506cab87489": {
+    "lat": 52.39610010663779,
+    "lon": 5.2584195210935,
+    "spottedAt": "2026-10-04",
+    "status": "confirmed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "8a2afef2-7130-46cf-915e-1fe0650929db": {
+    "lat": 52.373443048323956,
+    "lon": 5.294466796737904,
+    "spottedAt": "2026-10-20",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "8d95eee4-e485-46d1-afc2-3d6d56b0464a": {
+    "lat": 52.34404398685655,
+    "lon": 5.489393130755217,
+    "spottedAt": "2026-08-01",
+    "status": "linked",
+    "gemeente": "Zeewolde",
+    "adres": null
+  },
+  "9037d42e-2278-4f76-b9b5-9526ea2daa34": {
+    "lat": 52.37505902926802,
+    "lon": 5.21083117522359,
+    "spottedAt": "2026-11-05",
+    "status": "pending",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "90e2fbf9-17a8-49f4-b982-34f29279e77b": {
+    "lat": 52.61713741348579,
+    "lon": 5.8315534216397324,
+    "spottedAt": "2026-10-11",
+    "status": "removed",
+    "gemeente": "Noordoostpolder",
+    "adres": null
+  },
+  "9329edac-3332-4ac4-9ab2-b7dce445265d": {
+    "lat": 52.374434659804784,
+    "lon": 5.188917099850535,
+    "spottedAt": "2026-10-03",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "9a38d95c-860b-401d-9f2f-3af5acbbfdc7": {
+    "lat": 52.519202286999764,
+    "lon": 5.734746878916692,
+    "spottedAt": "2026-07-08",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "9b195f00-8574-4b9d-849b-0fec0adce100": {
+    "lat": 52.516795073580354,
+    "lon": 5.708211071154742,
+    "spottedAt": "2026-10-21",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "9d9aaace-3be3-40d3-9bc2-f4405a13625b": {
+    "lat": 52.51735376688223,
+    "lon": 5.70272181595611,
+    "spottedAt": "2026-07-20",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "a1958ba3-ad03-4393-a4ec-3d330db60926": {
+    "lat": 52.7123336017211,
+    "lon": 5.754775390966993,
+    "spottedAt": "2026-06-21",
+    "status": "removed",
+    "gemeente": "Noordoostpolder",
+    "adres": null
+  },
+  "a3477620-49fa-4cc2-bb7c-9274fa566423": {
+    "lat": 52.34627710966569,
+    "lon": 5.19056403875142,
+    "spottedAt": "2026-10-08",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "a5afa2d6-a0be-4036-b15e-e88b4398a46c": {
+    "lat": 52.51465263961184,
+    "lon": 5.448748042522295,
+    "spottedAt": "2026-07-23",
+    "status": "removed",
+    "gemeente": "Lelystad",
+    "adres": null
+  },
+  "a8626134-6920-4ac4-a710-a2bb89bcc9ed": {
+    "lat": 52.37498951017943,
+    "lon": 5.1832493163251145,
+    "spottedAt": "2026-10-20",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "aa77d1f0-22ca-4d14-b9e1-3579953292f9": {
+    "lat": 52.375682186309824,
+    "lon": 5.2065167935523915,
+    "spottedAt": "2026-08-05",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "abda3a30-b4a6-4d1d-948f-b1f199cf0bb4": {
+    "lat": 52.56690635555292,
+    "lon": 5.639082353469823,
+    "spottedAt": "2026-09-23",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "ad901e6f-567d-44c6-bfdb-fa93c5c630ca": {
+    "lat": 52.35316020337727,
+    "lon": 5.201667640333682,
+    "spottedAt": "2026-10-04",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "bad6729e-b87a-4a2f-9fdf-07a4d7a0ffaf": {
+    "lat": 52.37096705564855,
+    "lon": 5.192596022983994,
+    "spottedAt": "2026-06-24",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "bb907960-227c-4eba-a18b-b5a724a20407": {
+    "lat": 52.33640686411761,
+    "lon": 5.307249996485665,
+    "spottedAt": "2026-07-22",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "be896ed2-5f97-4f23-9f59-9c0889424cc6": {
+    "lat": 52.509448953540684,
+    "lon": 5.497993237055638,
+    "spottedAt": "2026-10-23",
+    "status": "removed",
+    "gemeente": "Lelystad",
+    "adres": null
+  },
+  "bfa15057-2c14-4ff9-9ca2-54d90a273a6c": {
+    "lat": 52.7172629657232,
+    "lon": 5.638177925984203,
+    "spottedAt": "2026-06-19",
+    "status": "removed",
+    "gemeente": "Noordoostpolder",
+    "adres": null
+  },
+  "ca75dda7-e6f3-41e4-93a5-668b3579cd15": {
+    "lat": 52.36262533180596,
+    "lon": 5.160328062561555,
+    "spottedAt": "2026-10-12",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "ca9e19e1-b4ec-4d4a-9630-ff0b8ff78f92": {
+    "lat": 52.444935896877524,
+    "lon": 5.701458478432599,
+    "spottedAt": "2026-09-27",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "cd7910b8-2720-4376-add8-e43e38c7deea": {
+    "lat": 52.33905179989281,
+    "lon": 5.1809076941631655,
+    "spottedAt": "2026-11-01",
+    "status": "pending",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "cea11b1b-f1ce-47ef-8a51-192788f255ca": {
+    "lat": 52.360799179942234,
+    "lon": 5.243731341060795,
+    "spottedAt": "2026-09-27",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "d20cad10-2467-4143-8b8b-58e0b2ba2e97": {
+    "lat": 52.31276781387078,
+    "lon": 5.539285642254533,
+    "spottedAt": "2026-08-27",
+    "status": "removed",
+    "gemeente": "Zeewolde",
+    "adres": null
+  },
+  "d5ad7620-0b3e-4414-8663-a441ea3db20b": {
+    "lat": 52.446286822712324,
+    "lon": 5.795950942677195,
+    "spottedAt": "2026-07-18",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "d7a7757d-0d65-4f91-8c4e-0e769c9f400f": {
+    "lat": 52.80792534332648,
+    "lon": 5.694439500745123,
+    "spottedAt": "2026-10-05",
+    "status": "removed",
+    "gemeente": "Noordoostpolder",
+    "adres": null
+  },
+  "dda7817f-e8e2-429e-8e50-bf7fbbb45360": {
+    "lat": 52.38118692528116,
+    "lon": 5.214890953969052,
+    "spottedAt": "2026-08-20",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "e12f7414-cd2a-4264-bf83-96a5e4aab93a": {
+    "lat": 52.408888480555696,
+    "lon": 5.284908500021972,
+    "spottedAt": "2026-07-25",
+    "status": "inconclusive",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "e378e407-cbf5-498b-9a0c-c559e9023a13": {
+    "lat": 52.340065464862626,
+    "lon": 5.214676525633899,
+    "spottedAt": "2026-07-20",
+    "status": "inconclusive",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "e992d35f-e1ae-4304-beb5-7b9ca2f04c19": {
+    "lat": 52.706967545160175,
+    "lon": 5.720484386629315,
+    "spottedAt": "2026-07-02",
+    "status": "removed",
+    "gemeente": "Noordoostpolder",
+    "adres": null
+  },
+  "f104addd-e1ea-4440-bd45-dca9ebf65d05": {
+    "lat": 52.525867607629515,
+    "lon": 5.72180169695579,
+    "spottedAt": "2026-07-11",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "f30ca47f-2c68-4299-943f-dd1853452a03": {
+    "lat": 52.36750697410392,
+    "lon": 5.201701298018886,
+    "spottedAt": "2026-09-30",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "f6d9a1bf-0cbb-4e55-9729-e5bfa4a5c6f6": {
+    "lat": 52.52032717456489,
+    "lon": 5.720540094498161,
+    "spottedAt": "2026-08-13",
+    "status": "removed",
+    "gemeente": "Dronten",
+    "adres": null
+  },
+  "f8d043f2-743f-4f02-a4df-6f9e11decce7": {
+    "lat": 52.380922599946494,
+    "lon": 5.1904602201798715,
+    "spottedAt": "2026-10-15",
+    "status": "confirmed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "fa15d53c-a740-4475-a440-a59ae8e9f8ec": {
+    "lat": 52.374635153968946,
+    "lon": 5.212468515258206,
+    "spottedAt": "2026-07-19",
+    "status": "removed",
+    "gemeente": "Almere",
+    "adres": null
+  },
+  "e7c19eaa-6374-495d-b274-877972609fea": {
+    "lat": 52.40664758711207,
+    "lon": 5.288614534638415,
+    "spottedAt": "2026-11-09T00:00:00",
+    "status": "pending",
+    "gemeente": "Almere",
+    "adres": null
+  }
+}

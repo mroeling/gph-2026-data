@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aziatische hoornaar nesten Flevoland 2026</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    :root {
+      --tekst: #1d2328; --zacht: #5b6670; --rand: #d9dee3; --achtergrond: #f6f8fa; --kaart: #ffffff;
+      --groen: #2e7d32; --rood: #c62828; --oranje: #ef6c00;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --tekst: #e6e9ec; --zacht: #9aa5ae; --rand: #3a424a; --achtergrond: #161b20; --kaart: #1f262d;
+      }
+    }
+    :root[data-theme="dark"] {
+      --tekst: #e6e9ec; --zacht: #9aa5ae; --rand: #3a424a; --achtergrond: #161b20; --kaart: #1f262d;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--tekst); background: var(--achtergrond); }
+    header { padding: 16px; background: var(--kaart); border-bottom: 1px solid var(--rand); }
+    h1 { font-size: 1.25rem; margin: 0 0 8px; }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-size: 0.95rem; margin-bottom: 6px; }
+    .filters label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+    .stip { display: inline-block; width: 12px; height: 12px; border-radius: 50%; }
+    .teller { color: var(--zacht); margin-left: auto; }
+    #kaart { height: 60vh; min-height: 320px; margin: 0; position: relative; }
+    #kaart.vol { position: fixed; inset: 0; height: 100vh; width: 100vw; z-index: 2000; min-height: 0; }
+    #kaartKnop { position: absolute; top: 10px; right: 10px; z-index: 1000; padding: 6px 10px; font: inherit; font-size: 0.9rem;
+      border: 1px solid var(--rand); border-radius: 6px; background: var(--kaart); color: var(--tekst); cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,.2); }
+    main { padding: 16px; }
+    .tabel-wrap { overflow-x: auto; background: var(--kaart); border: 1px solid var(--rand); border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th, td { padding: 8px 10px; border-bottom: 1px solid var(--rand); text-align: left; vertical-align: top; white-space: nowrap; }
+    th { background: var(--achtergrond); position: sticky; top: 0; cursor: pointer; user-select: none; }
+    th .pijl { color: var(--zacht); font-size: 0.8em; }
+    tr.filterrij th { cursor: default; padding: 6px 10px; }
+    .filterrij input { width: 100%; padding: 6px; font: inherit; border: 1px solid var(--rand); border-radius: 6px; background: var(--kaart); color: var(--tekst); }
+    select { font: inherit; padding: 4px 6px; border-radius: 6px; border: 1px solid var(--rand); background: var(--kaart); color: var(--tekst); }
+    .gkleur { border-left: 6px solid var(--groen); }
+    .rkleur { border-left: 6px solid var(--rood); }
+    .okleur { border-left: 6px solid var(--oranje); }
+    td.geen { text-align: center; color: var(--zacht); padding: 24px; }
+    a { color: inherit; }
+    #status { font-size: 0.85rem; color: var(--zacht); min-height: 1.2em; margin-top: 8px; }
+    footer { padding: 12px 16px 20px; font-size: 0.85rem; color: var(--zacht); text-align: center; }
+    footer a { color: var(--zacht); }
+    @media (max-width: 600px) {
+      header, main { padding: 12px; }
+      #kaart { height: 55vh; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aziatische hoornaar – nesten Flevoland 2026</h1>
+    <div class="filters" role="group" aria-label="Filter op geruimd">
+      <strong>Geruimd:</strong>
+      <label><input type="checkbox" data-geruimd value="ja" checked> <span class="stip" style="background:var(--groen)"></span> ja</label>
+      <label><input type="checkbox" data-geruimd value="onbereikbaar" checked> <span class="stip" style="background:var(--rood)"></span> onbereikbaar</label>
+      <label><input type="checkbox" data-geruimd value="te laat" checked> <span class="stip" style="background:var(--oranje)"></span> te laat</label>
+    </div>
+    <div class="filters" role="group" aria-label="Filter op bron">
+      <strong>Bron:</strong>
+      <label><input type="checkbox" data-bron value="waarneming.nl" checked> waarneming.nl</label>
+      <label><input type="checkbox" data-bron value="meldpunt" checked> meldpunt</label>
+      <label><input type="checkbox" data-bron value="handmatig" checked> handmatig</label>
+      <span class="teller" id="teller"></span>
+    </div>
+  </header>
+
+  <div id="kaart"><button id="kaartKnop" type="button" aria-label="Kaart volledig openen">Volledig scherm</button></div>
+
+  <main>
+    <div class="tabel-wrap">
+      <table id="tabel">
+        <thead>
+          <tr id="kopRij"></tr>
+          <tr class="filterrij">
+            <th></th>
+            <th><input id="fDatum" type="search" placeholder="filter datum…" aria-label="Filter op datum"></th>
+            <th><input id="fLocatie" type="search" placeholder="filter plaats…" aria-label="Filter op plaats"></th>
+            <th></th><th></th><th></th><th></th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <div id="status"></div>
+  </main>
+
+  <footer>
+    data 2026 - <a href="https://waarneming.nl/" target="_blank" rel="noopener">waarneming.nl</a> en <a href="https://www.meldpuntaziatischehoornaar.nl/" target="_blank" rel="noopener">meldpuntaziatischehoornaar.nl</a>
+  </footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(() => {
+  const KLEUREN = { 'ja': '#2e7d32', 'onbereikbaar': '#c62828', 'te laat': '#ef6c00' };
+  const RIJKLASSE = { 'ja': 'gkleur', 'onbereikbaar': 'rkleur', 'te laat': 'okleur' };
+  const GERUIMD_OPTIES = ['ja', 'onbereikbaar', 'te laat'];
+  const KOLOMMEN = [
+    { key: 'id', label: 'ID' },
+    { key: 'datum', label: 'Datum' },
+    { key: 'locatie', label: 'Plaats' },
+    { key: 'validatie', label: 'Validatie / status' },
+    { key: 'coord', label: 'Coördinaten' },
+    { key: 'bron', label: 'Bron' },
+    { key: 'geruimd', label: 'Geruimd' },
+  ];
+
+  let data = [];
+  let actief = new Set(GERUIMD_OPTIES);
+  let bronActief = new Set(['waarneming.nl', 'meldpunt', 'handmatig']);
+  let sortKey = 'datum', sortAsc = false;
+  const markers = new Map(); // sleutel -> marker
+
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const status = (tekst) => { document.getElementById('status').textContent = tekst; };
+  // Waarneming.nl heeft een eigen pagina per id; het meldpunt heeft (nog) geen publieke link
+  const linkBron = (w, kort = false) => w.bron === 'waarneming.nl'
+    ? `<a href="https://waarneming.nl/observation/${esc(w.id)}/" target="_blank" rel="noopener">${kort ? esc(w.id) : 'waarneming ' + esc(w.id)}</a>`
+    : (kort ? esc(w.id) : (w.bron === 'handmatig' ? 'handmatig ' : 'meldpunt ') + esc(w.id));
+
+  // Kaart: Flevoland, OpenStreetMap-tegels (gratis)
+  const FLEVOLAND = [[52.2, 5.0], [52.9, 5.95]];
+  const map = L.map('kaart').setView([52.6, 5.5], 9);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>-bijdragers',
+  }).addTo(map);
+  const markerLaag = L.layerGroup().addTo(map);
+
+  // Knop: kaart volledig scherm (Esc sluit het weer)
+  const kaartEl = document.getElementById('kaart');
+  const kaartKnop = document.getElementById('kaartKnop');
+  function zetVolScherm(aan) {
+    kaartEl.classList.toggle('vol', aan);
+    kaartKnop.textContent = aan ? 'Sluiten' : 'Volledig scherm';
+    kaartKnop.setAttribute('aria-label', aan ? 'Kaart sluiten' : 'Kaart volledig openen');
+    setTimeout(() => map.invalidateSize(), 50);
+  }
+  kaartKnop.addEventListener('click', (e) => { e.stopPropagation(); zetVolScherm(!kaartEl.classList.contains('vol')); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && kaartEl.classList.contains('vol')) zetVolScherm(false); });
+
+  // Kolomkoppen met sorteer-knop
+  const kopRij = document.getElementById('kopRij');
+  KOLOMMEN.forEach((k) => {
+    const th = document.createElement('th');
+    th.dataset.key = k.key;
+    th.innerHTML = `${esc(k.label)} <span class="pijl"></span>`;
+    th.addEventListener('click', () => {
+      if (sortKey === k.key) sortAsc = !sortAsc; else { sortKey = k.key; sortAsc = true; }
+      render();
+    });
+    kopRij.appendChild(th);
+  });
+
+  const sorteerWaarde = (w, key) => {
+    if (key === 'coord') return w.lat;
+    if (key === 'validatie') return (w.validatie || w.status || '').toLowerCase();
+    return (w[key] ?? '').toString().toLowerCase();
+  };
+
+  function gefilterd() {
+    const fDatum = document.getElementById('fDatum').value.trim().toLowerCase();
+    const fLocatie = document.getElementById('fLocatie').value.trim().toLowerCase();
+    return data
+      .filter((w) => actief.has(w.geruimd))
+      .filter((w) => bronActief.has(w.bron))
+      .filter((w) => !fDatum || w.datum.toLowerCase().includes(fDatum))
+      .filter((w) => !fLocatie || (w.locatie || '').toLowerCase().includes(fLocatie));
+  }
+
+  function renderKaart(lijst) {
+    markerLaag.clearLayers();
+    markers.clear();
+    lijst.forEach((w) => {
+      const m = L.circleMarker([w.lat, w.lon], {
+        radius: 7, color: '#ffffff', weight: 1.5,
+        fillColor: KLEUREN[w.geruimd], fillOpacity: 0.9,
+      });
+      m.bindPopup(
+        `<strong>${esc(w.locatie)}</strong><br>${esc(w.datum)}<br>Bron: ${esc(w.bron)}<br>` +
+        `Status:${esc(w.validatie || w.status || '–')}<br>` +
+        `Geruimd: <strong>${esc(w.geruimd)}</strong><br>${linkBron(w)}`
+      );
+      m.addTo(markerLaag);
+      markers.set(w.sleutel, m);
+    });
+  }
+
+  function renderTabel(lijst) {
+    const gesorteerd = [...lijst].sort((a, b) => {
+      const va = sorteerWaarde(a, sortKey), vb = sorteerWaarde(b, sortKey);
+      if (va < vb) return sortAsc ? -1 : 1;
+      if (va > vb) return sortAsc ? 1 : -1;
+      return 0;
+    });
+    document.querySelectorAll('#kopRij th').forEach((th) => {
+      th.querySelector('.pijl').textContent = th.dataset.key === sortKey ? (sortAsc ? '▲' : '▼') : '';
+    });
+
+    const tbody = document.getElementById('tbody');
+    if (!gesorteerd.length) {
+      tbody.innerHTML = '<tr><td class="geen" colspan="7">Geen waarnemingen met deze filters.</td></tr>';
+      return;
+    }
+    tbody.innerHTML = gesorteerd.map((w) => `
+      <tr class="${RIJKLASSE[w.geruimd]}" data-key="${esc(w.sleutel)}">
+        <td>${linkBron(w, true)}</td>
+        <td>${esc(w.datum)}</td>
+        <td>${esc(w.locatie)}</td>
+        <td>${esc(w.validatie || w.status)}</td>
+        <td><a href="https://www.google.com/maps?q=${w.lat},${w.lon}" target="_blank" rel="noopener">${w.lat.toFixed(5)}, ${w.lon.toFixed(5)}</a></td>
+        <td>${esc(w.bron)}</td>
+        <td>
+          <select data-key="${esc(w.sleutel)}" aria-label="Geruimd voor ${esc(w.bron)} ${esc(w.id)}">
+            ${GERUIMD_OPTIES.map((o) => `<option value="${o}" ${o === w.geruimd ? 'selected' : ''}>${o}</option>`).join('')}
+          </select>
+        </td>
+      </tr>`).join('');
+  }
+
+  function render() {
+    const lijst = gefilterd();
+    renderKaart(lijst);
+    renderTabel(lijst);
+    document.getElementById('teller').textContent = `${lijst.length} van ${data.length} waarnemingen zichtbaar`;
+  }
+
+  // Filters: geruimd en bron (gelden voor kaart én tabel)
+  document.querySelectorAll('input[data-geruimd]').forEach((cb) => {
+    cb.addEventListener('change', () => {
+      if (cb.checked) actief.add(cb.value); else actief.delete(cb.value);
+      render();
+    });
+  });
+  document.querySelectorAll('input[data-bron]').forEach((cb) => {
+    cb.addEventListener('change', () => {
+      if (cb.checked) bronActief.add(cb.value); else bronActief.delete(cb.value);
+      render();
+    });
+  });
+  ['fDatum', 'fLocatie'].forEach((id) =>
+    document.getElementById(id).addEventListener('input', render));
+
+  // Geruimd wijzigen in de tabel → opslaan in de database
+  document.getElementById('tbody').addEventListener('change', async (e) => {
+    const sel = e.target.closest('select[data-key]');
+    if (!sel) return;
+    const w = data.find((x) => x.sleutel === sel.dataset.key);
+    const waarde = sel.value;
+    status('Opslaan…');
+    try {
+      const res = await fetch(`/api/waarnemingen/${encodeURIComponent(w.bron)}/${encodeURIComponent(w.id)}`, {
+        method: 'PATCH', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ geruimd: waarde }),
+      });
+      const json = await res.json();
+      if (!res.ok) throw new Error(json.fout || res.statusText);
+      w.geruimd = waarde; w.geruimd_gewijzigd = json.geruimd_gewijzigd;
+      status(`${w.bron} ${w.id} opgeslagen als “${waarde}”.`);
+      render();
+    } catch (err) {
+      status('Opslaan mislukt: ' + err.message);
+      sel.value = w.geruimd;
+    }
+  });
+
+  // Klik op tabelrij → kaartpunt openen
+  document.getElementById('tbody').addEventListener('click', (e) => {
+    if (e.target.closest('a, select')) return;
+    const tr = e.target.closest('tr[data-key]');
+    const m = tr && markers.get(tr.dataset.key);
+    if (m) { map.setView(m.getLatLng(), Math.max(map.getZoom(), 13)); m.openPopup(); }
+  });
+
+  async function laad() {
+    status('Laden…');
+    const res = await fetch('/api/waarnemingen');
+    data = (await res.json()).map((w) => ({ ...w, sleutel: w.bron + ':' + w.id }));
+    render();
+    map.invalidateSize();
+    map.fitBounds(FLEVOLAND);
+    status(`${data.length} waarnemingen geladen uit de lokale database.`);
+  }
+  laad().catch((err) => status('Laden mislukt: ' + err.message));
+})();
+</script>
+</body>
+</html>

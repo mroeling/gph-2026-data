@@ -1,0 +1,41 @@
+# Extra waarneming.nl-meldingen die in "Ruimingen TF" voorkomen maar niet in de eerste set zaten (id|datum|waarnemer|locatie|validatie|lat|lon|nauwkeurigheid)
+396532159|2026-05-05||Zeewolde - bebouwing (FL)|Onbekend|52.32793|5.54528|
+399810635|2026-05-21||Zeewolde - bebouwing (FL)|met bewijs|52.32170|5.53599|
+400295081|2026-05-23||Zeewolde - De Eemhof (FL)|Onbekend|52.25769|5.40355|
+405695530|2026-06-17||Zeewolde - bebouwing (FL)|met bewijs|52.34018|5.51944|
+407213903|2026-06-25||Lelystad - Zuiderzeewijk (FL)|Onbekend|52.52429|5.48007|
+409510527|2026-07-06||Lelystad - Landerijen (FL)|met bewijs|52.48964|5.50785|
+410087306|2026-07-09||Biddinghuizen - Biddingbos (FL)|met bewijs|52.44688|5.68340|
+410125959|2026-07-09||Almere - Landgoederenbuurt (FL)|(nog) niet te beoordelen|52.39205|5.26963|
+411181270|2026-07-14||Zeewolde - bebouwing (FL)|Onbekend|52.32694|5.53450|
+415832405|2026-08-08||Lelystad - Boswijk (FL)|aannemelijk|52.50792|5.49751|
+416018304|2026-08-10||Lelystad - Sportpark / Stadscamping (FL)|aannemelijk|52.52068|5.50201|
+417189898|2026-08-17||Dronten - bebouwing (FL)|aannemelijk|52.52015|5.72630|
+417189797|2026-08-17||Dronten - bebouwing (FL)|aannemelijk|52.51780|5.72221|
+417306726|2026-08-18||Lelystad - Lage Vaartbos (FL)|aannemelijk|52.50468|5.54244|
+418833248|2026-08-29||Almere - Stedenwijk (FL)|Onbekend|52.35885|5.19434|
+417934396|2026-08-23||Almere - Muziekwijk (FL)|aannemelijk|52.37102|5.18349|
+420682359|2026-08-23||Biddinghuizen - Biddingbos (FL)|aannemelijk|52.45298|5.68012|
+418741850|2026-08-29||Lelystad - Atolwijk (FL)|aannemelijk|52.51326|5.48035|
+426603522|2026-10-14||Almere - Tuinpark Waterland (FL)|Onbekend|52.33462|5.26034|
+419031897|2026-08-31||Emmeloord (FL)|aannemelijk|52.72140|5.75426|
+420001353|2026-09-08||Almere-Haven (FL)|met bewijs|52.34402|5.19811|
+421159359|2026-09-17||Emmeloord (FL)|aannemelijk|52.70675|5.74230|
+421875206|2026-09-23||Swifterbant - Swifterbos (FL)|aannemelijk|52.56738|5.62977|
+423309031|2026-10-04||Almere - Bouwmeesterbuurt (FL)|aannemelijk|52.39982|5.25427|
+423492439|2026-10-05||Rutten (FL)|aannemelijk|52.80815|5.69884|
+423515723|2026-10-05||Zeewolde - Horsterwold (FL)|aannemelijk|52.32540|5.50931|
+423960480|2026-10-10||Zeewolde - bebouwing (FL)|aannemelijk|52.33273|5.53614|
+423961045|2026-10-10||Zeewolde - bebouwing (FL)|aannemelijk|52.32593|5.53496|
+423904947|2026-10-10||Biddinghuizen - Biddingbos (FL)|aannemelijk|52.45148|5.68098|
+424380047|2026-10-14||Zeewolde - bebouwing (FL)|aannemelijk|52.32888|5.52353|
+424534489|2026-10-15||Zeewolde - De Eemhof (FL)|aannemelijk|52.26563|5.40296|
+424539537|2026-10-15||Almere - Koningin Beatrixpark (FL)|aannemelijk|52.37978|5.18713|
+424692996|2026-10-16||Emmeloord - Kuindervaart e.o. (FL)|aannemelijk|52.74133|5.78128|
+421403236|2026-09-19||Swifterbant (FL)|aannemelijk|52.57160|5.63690|
+425613246|2026-10-24||Swifterbant (FL)|aannemelijk|52.56788|5.63372|
+425787592|2026-10-26||Dronten - bebouwing (FL)|aannemelijk|52.51987|5.71875|
+425886606|2026-10-27||Zeewolde - Horsterwold (FL)|aannemelijk|52.32312|5.50891|
+426012602|2026-10-28||Zeewolde - Hulkesteinse Bos (FL)|aannemelijk|52.27615|5.44826|
+426729761|2026-11-04||Oostvaardersbos / Fluitbos (FL)|aannemelijk|52.42387|5.26723|
+426870948|2026-11-05||Dronten - Drieslag (FL)|aannemelijk|52.53133|5.70362|
