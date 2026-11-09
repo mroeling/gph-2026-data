@@ -128,3 +128,4 @@
 392890483|2026-04-17 14:38||Lelystad - Karveel (FL)|met bewijs|52.52225|5.45249|onbekend
 392939845|2026-04-16 16:00||Lelystad - Karveel (FL)|met bewijs|52.52269|5.45151|onbekend
 427261863|2026-11-09 16:04||Zeewolde - Horsterwold (FL)|Onbekend|52.31444|5.45371|10m
+427235653|2026-11-09||Lelystad - Larservaartbos (FL)|Onbekend|52.48037|5.50919|29m
