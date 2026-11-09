@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#f6f8fa"/>
+  <!-- vleugels -->
+  <ellipse cx="26" cy="19" rx="9" ry="5" transform="rotate(-25 26 19)" fill="#ffffff" stroke="#6b7780" stroke-width="1.2"/>
+  <ellipse cx="34" cy="20" rx="7" ry="4" transform="rotate(10 34 20)" fill="#ffffff" stroke="#6b7780" stroke-width="1.2"/>
+  <!-- antennes -->
+  <path d="M12 25 L6 17 M15 24 L12 15" stroke="#1d2328" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <!-- poten met gele uiteinden -->
+  <path d="M22 37 L17 46 M27 38 L26 49 M31 37 L36 46" stroke="#e0a800" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+  <path d="M22 37 L17 46 M27 38 L26 49 M31 37 L36 46" stroke="#1d2328" stroke-width="0.6" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <!-- achterlijf -->
+  <ellipse cx="43" cy="35" rx="15" ry="9" transform="rotate(15 43 35)" fill="#1d2328"/>
+  <!-- oranje band -->
+  <ellipse cx="49" cy="37" rx="3" ry="6.5" transform="rotate(15 49 37)" fill="#f08c00"/>
+  <!-- borststuk en kop -->
+  <ellipse cx="24" cy="30" rx="8" ry="7" fill="#1d2328"/>
+  <circle cx="14" cy="29" r="5" fill="#1d2328"/>
+  <!-- oog -->
+  <circle cx="12" cy="28" r="1.2" fill="#f6f8fa"/>
+</svg>

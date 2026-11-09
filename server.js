@@ -36,6 +36,7 @@ function leesBody(req) {
 
 const statischeBestanden = {
   '/': { file: 'index.html', type: 'text/html; charset=utf-8' },
+  '/favicon.svg': { file: 'favicon.svg', type: 'image/svg+xml' },
 };
 
 const server = http.createServer(async (req, res) => {

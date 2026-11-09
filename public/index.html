@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aziatische hoornaar nesten Flevoland 2026</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <style>
     :root {
@@ -120,10 +121,18 @@
 
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const status = (tekst) => { document.getElementById('status').textContent = tekst; };
-  // Waarneming.nl heeft een eigen pagina per id; het meldpunt heeft (nog) geen publieke link
-  const linkBron = (w, kort = false) => w.bron === 'waarneming.nl'
-    ? `<a href="https://waarneming.nl/observation/${esc(w.id)}/" target="_blank" rel="noopener">${kort ? esc(w.id) : 'waarneming ' + esc(w.id)}</a>`
-    : (kort ? esc(w.id) : (w.bron === 'handmatig' ? 'handmatig ' : 'meldpunt ') + esc(w.id));
+  // Waarneming.nl heeft een eigen pagina per id; meldpunt-meldingen zijn op de meldpuntkaart te vinden
+  // (id = uuid van de API, of het meldingsnummer uit de CSV); handmatige meldingen hebben geen link
+  const MELDPUNT_KAART = 'https://www.meldpuntaziatischehoornaar.nl/kaart?melding=';
+  const linkBron = (w, kort = false) => {
+    if (w.bron === 'waarneming.nl') {
+      return `<a href="https://waarneming.nl/observation/${esc(w.id)}/" target="_blank" rel="noopener">${kort ? esc(w.id) : 'waarneming ' + esc(w.id)}</a>`;
+    }
+    if (w.bron === 'meldpunt') {
+      return `<a href="${MELDPUNT_KAART}${encodeURIComponent(w.id)}" target="_blank" rel="noopener">${kort ? esc(w.id) : 'meldpunt ' + esc(w.id)}</a>`;
+    }
+    return kort ? esc(w.id) : 'handmatig ' + esc(w.id);
+  };
 
   // Kaart: Flevoland, OpenStreetMap-tegels (gratis)
   const FLEVOLAND = [[52.2, 5.0], [52.9, 5.95]];

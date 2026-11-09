@@ -23,6 +23,9 @@ Open daarna http://localhost:3000
 | `server.js` | Webserver + API (`GET /api/waarnemingen`, `PATCH /api/waarnemingen/:id`) |
 | `public/index.html` | Kaart (Leaflet + OpenStreetMap) en tabel |
 | `haal-op-browser.js` | Plakken in de browser-console om de lijst te verversen |
+| `export-json.js` | Schrijft `public/data.json` voor de online (alleen-lezen) versie |
+| `public/favicon.svg` | Icoon van de geelpoothoornaar (browsertabblad) |
+| `.github/workflows/pages.yml` | Publiceert de map `public/` naar GitHub Pages bij elke push naar `main` |
 
 ## Velden in de database
 
@@ -38,7 +41,26 @@ Open daarna http://localhost:3000
 - Groen = geruimd **ja**, rood = **onbereikbaar**, oranje = **te laat**
 - De checkboxes boven de kaart filteren zowel de kaart als de tabel.
 - De tabel is sorteerbaar (klik op de kolomkop) en filterbaar op datum en plaats.
-- Geruimd wijzigen: via de keuzelijst in de tabel; wordt direct opgeslagen in de database.
+- Geruimd wijzigen: via de keuzelijst in de tabel; wordt direct opgeslagen in de database (alleen lokaal, zie hieronder).
+- Meldpunt-meldingen linken naar de meldpuntkaart (`…/kaart?melding=<id>`); waarneming.nl-meldingen naar hun eigen pagina.
+
+## Online zetten (GitHub Pages)
+
+De online versie is alleen-lezen: die leest `public/data.json`, omdat GitHub Pages geen server draait.
+De site: https://mroeling.github.io/gph-2026-data/
+
+Na elke wijziging in de database:
+
+```bash
+cd 2026
+node export-json.js
+git add -A
+git commit -m "Bijwerken data"
+git push
+```
+
+De workflow in `.github/workflows/pages.yml` publiceert de site automatisch. Het duurt meestal een minuut.
+`data/flevoland.db` staat in `.gitignore` en gaat niet mee naar GitHub.
 
 ## Bijwerken met nieuwe waarnemingen
 
