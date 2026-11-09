@@ -24,6 +24,7 @@ Open daarna http://localhost:3000
 | `public/index.html` | Kaart (Leaflet + OpenStreetMap) en tabel |
 | `haal-op-browser.js` | Plakken in de browser-console om de lijst te verversen |
 | `export-json.js` | Schrijft `public/data.json` voor de online (alleen-lezen) versie |
+| `data/extra_meldingen.txt` + `import-extra.js` | Losse meldingen die niet via de CSV of de API binnenkomen. Draai `node import-extra.js` na een wijziging |
 | `public/favicon.svg` | Icoon van de geelpoothoornaar (browsertabblad) |
 | `.github/workflows/pages.yml` | Publiceert de map `public/` naar GitHub Pages bij elke push naar `main` |
 

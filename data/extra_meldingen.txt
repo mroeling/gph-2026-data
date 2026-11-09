@@ -1,0 +1,3 @@
+# Extra meldingen die niet via de CSV of de API binnenkomen. Kolommen: bron|id|datum|locatie|status|lat|lon|geruimd
+# Wordt ingelezen met: node import-extra.js (geruimd wordt alleen bij het eerste toevoegen gezet)
+meldpunt|f6f1dedb-3371-423a-8307-342a305ed2d4|2026-11-09|G.T. Rietveldstraat 78, 1333 LG Almere Buiten|Wachtend op validatie|52.39891|5.25274|te laat
