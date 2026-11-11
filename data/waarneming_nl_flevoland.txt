@@ -23,7 +23,6 @@
 424191649|2026-10-12 15:49||Zeewolde - Horsterwold (FL)|aannemelijk|52.31500|5.45837|8m
 424234086|2026-10-12 13:08||Almere - Pampushout (FL)|aannemelijk|52.35996|5.16012|7m
 423815482|2026-10-08 18:18||Lelystad - Archipel (FL)|aannemelijk|52.50870|5.49189|3m
-423831687|2026-10-08 17:50||Zeewolde - bebouwing (FL)|aannemelijk|52.33395|5.51653|15m
 423806654|2026-10-08 16:33||Oostvaardersplassen - Knardijk / Begin Praamweg / Spoorviaduct (FL)|aannemelijk|52.44980|5.42775|5m
 423701743|2026-10-07 15:24||Lelystad - Hollandse Hout (FL)|aannemelijk|52.45679|5.42959|4m
 423695584|2026-10-07 14:55||Lelystad - Hollandse Hout (FL)|aannemelijk|52.46827|5.42973|16m
