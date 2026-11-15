@@ -1,3 +1,4 @@
 # Extra meldingen die niet via de CSV of de API binnenkomen. Kolommen: bron|id|datum|locatie|status|lat|lon|geruimd
 # Wordt ingelezen met: node import-extra.js (geruimd wordt alleen bij het eerste toevoegen gezet)
 meldpunt|846daced-7f04-4bb1-b39d-3023ef8fc108|2026-11-14|Stopperknoop, Almere|Weggehaald|52.40019|5.16869|te laat
+handmatig|N2|onbekend|IVN Bomentuin, Almere Oosterwold|Handmatig toegevoegd|52.338468806564|5.276032789485525|te laat
