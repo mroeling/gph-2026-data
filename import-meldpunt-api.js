@@ -11,7 +11,7 @@ const STATUS = { removed: 'Weggehaald', pending: 'Wachtend op validatie', reject
 const bestaand = db.prepare("SELECT id, datum, lat, lon FROM waarnemingen WHERE bron = 'meldpunt'").all();
 const afstandM = (a, b) => Math.hypot((a.lat - b.lat) * 111320, (a.lon - b.lon) * 111320 * Math.cos((a.lat * Math.PI) / 180));
 const insert = db.prepare(`INSERT INTO waarnemingen (bron, id, datum, locatie, validatie, status, type, lat, lon, nauwkeurigheid, geruimd, geimporteerd)
-  VALUES ('meldpunt', ?, ?, ?, NULL, ?, 'Nest', ?, ?, NULL, 'ja', ?) ON CONFLICT(bron, id) DO NOTHING`);
+  VALUES ('meldpunt', ?, ?, ?, NULL, ?, 'Nest', ?, ?, NULL, 'te laat', ?) ON CONFLICT(bron, id) DO NOTHING`);
 const nu = new Date().toISOString();
 let toegevoegd = 0, dubbel = 0;
 db.exec('BEGIN');

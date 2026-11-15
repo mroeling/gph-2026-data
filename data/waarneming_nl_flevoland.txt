@@ -128,3 +128,10 @@
 392939845|2026-04-16 16:00||Lelystad - Karveel (FL)|met bewijs|52.52269|5.45151|onbekend
 427261863|2026-11-09 16:04||Zeewolde - Horsterwold (FL)|Onbekend|52.31444|5.45371|10m
 427235653|2026-11-09||Lelystad - Larservaartbos (FL)|Onbekend|52.48037|5.50919|29m
+427407939|2026-11-11 16:54||Lelystad - Hollandse Hout (FL)|aannemelijk|52.48128|5.42982|5m
+427606832|2026-11-14 15:03||Lelystad - Knarbos Oost (FL)|Onbekend|52.40847|5.49557|5m
+427601134|2026-11-14 14:34||Dronten - Wisentbos (FL)|aannemelijk|52.51702|5.65473|3m
+427612597|2026-11-14 15:15||Zeewolde - Horsterwold (FL)|Onbekend|52.32595|5.45488|15m
+394070122|2026-04-23 19:24||Lelystad - Jagersveld / Groene Velden (FL)|met bewijs|52.53191|5.49140|100m
+427704693|2026-05-27 17:44||Lelystad - Atolwijk (FL)|Onbekend|52.51742|5.49728|4m
+427507128|2026-11-13||Almere - Beginbos (FL)|aannemelijk|52.34980|5.20865|4m

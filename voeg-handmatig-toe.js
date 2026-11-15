@@ -35,7 +35,7 @@ const items = [
     let lat = co.lat, lon = co.lon, bron = 'opgegeven';
     if (co.adres) { const g = await geo(co.adres); lat = g.lat; lon = g.lon; bron = `adres (PDOK: ${g.treffer})`; }
     db.prepare(`INSERT INTO waarnemingen (bron, id, datum, locatie, validatie, status, type, lat, lon, nauwkeurigheid, geruimd, geimporteerd)
-      VALUES ('handmatig', ?, ?, ?, 'handmatig', 'Handmatig toegevoegd', 'Nest', ?, ?, NULL, 'ja', ?)
+      VALUES ('handmatig', ?, ?, ?, 'handmatig', 'Handmatig toegevoegd', 'Nest', ?, ?, NULL, 'te laat', ?)
       ON CONFLICT(bron, id) DO UPDATE SET datum = excluded.datum, locatie = excluded.locatie, lat = excluded.lat, lon = excluded.lon`)
       .run('H' + r, iso(datum), locatie, lat, lon, new Date().toISOString());
     regels.push(`${r};${lat.toFixed(6)};${lon.toFixed(6)}`);

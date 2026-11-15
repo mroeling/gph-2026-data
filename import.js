@@ -64,7 +64,7 @@ if (!bestaand) {
 
 const upsert = db.prepare(`
   INSERT INTO waarnemingen (bron, id, datum, locatie, validatie, status, type, lat, lon, nauwkeurigheid, geruimd, geimporteerd)
-  VALUES (@bron, @id, @datum, @locatie, @validatie, @status, @type, @lat, @lon, @nauwkeurigheid, 'ja', @geimporteerd)
+  VALUES (@bron, @id, @datum, @locatie, @validatie, @status, @type, @lat, @lon, @nauwkeurigheid, 'te laat', @geimporteerd)
   ON CONFLICT(bron, id) DO UPDATE SET
     datum = excluded.datum,
     locatie = CASE WHEN waarnemingen.bron = 'meldpunt' THEN waarnemingen.locatie ELSE excluded.locatie END,
