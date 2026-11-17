@@ -42,6 +42,7 @@
     .gkleur { border-left: 6px solid var(--groen); }
     .rkleur { border-left: 6px solid var(--rood); }
     .okleur { border-left: 6px solid var(--oranje); }
+    tr.markeer td { background: var(--achtergrond); box-shadow: inset 0 2px 0 var(--tekst), inset 0 -2px 0 var(--tekst); }
     td.geen { text-align: center; color: var(--zacht); padding: 24px; }
     a { color: inherit; }
     #status { font-size: 0.85rem; color: var(--zacht); min-height: 1.2em; margin-top: 8px; }
@@ -75,6 +76,7 @@
       <label>tot <input id="fTot" type="date" aria-label="Datum tot en met"></label>
       <strong>Plaats:</strong>
       <input id="fLocatie" type="search" placeholder="filter plaats…" aria-label="Filter op plaats">
+      <label><input type="checkbox" id="linkTabel" checked> link aan tabel</label>
     </div>
   </header>
 
@@ -205,8 +207,21 @@
         `Geruimd: <strong>${esc(w.geruimd)}</strong><br>${linkBron(w)}`
       );
       m.addTo(markerLaag);
+      // Klik op een punt op de kaart: de bijbehorende regel in de tabel scrollt in beeld en wordt kort gemarkeerd
+      m.on('click', () => naarRegel(w.sleutel));
       markers.set(w.sleutel, m);
     });
+  }
+
+  function naarRegel(sleutel) {
+    const tr = document.querySelector(`#tbody tr[data-key="${CSS.escape(sleutel)}"]`);
+    if (!tr) return;
+    document.querySelectorAll('#tbody tr.markeer').forEach((x) => x.classList.remove('markeer'));
+    tr.classList.add('markeer');
+    setTimeout(() => tr.classList.remove('markeer'), 3000);
+    if (!document.getElementById('linkTabel').checked) return; // toggle uit: alleen markeren, niet scrollen
+    if (kaartEl.classList.contains('vol')) zetVolScherm(false); // anders ligt de tabel achter de kaart
+    setTimeout(() => tr.scrollIntoView({ behavior: 'smooth', block: 'center' }), 60);
   }
 
   function renderTabel(lijst) {
