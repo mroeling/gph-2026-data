@@ -135,3 +135,4 @@
 394070122|2026-04-23 19:24||Lelystad - Jagersveld / Groene Velden (FL)|met bewijs|52.53191|5.49140|100m
 427704693|2026-05-27 17:44||Lelystad - Atolwijk (FL)|Onbekend|52.51742|5.49728|4m
 427507128|2026-11-13||Almere - Beginbos (FL)|aannemelijk|52.34980|5.20865|4m
+427782399|2026-10-14 17:14||Lelystad - Natuurpark Lelystad (FL)|Onbekend|52.48631|5.52596|7m
