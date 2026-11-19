@@ -136,3 +136,4 @@
 427704693|2026-05-27 17:44||Lelystad - Atolwijk (FL)|Onbekend|52.51742|5.49728|4m
 427507128|2026-11-13||Almere - Beginbos (FL)|aannemelijk|52.34980|5.20865|4m
 427782399|2026-10-14 17:14||Lelystad - Natuurpark Lelystad (FL)|Onbekend|52.48631|5.52596|7m
+427890336|2026-11-18 15:26||Zeewolde - Horsterwold (FL)|Onbekend|52.32209|5.43696|15m

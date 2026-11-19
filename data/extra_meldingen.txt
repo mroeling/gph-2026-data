@@ -6,3 +6,5 @@ meldpunt|49851323-4f51-4351-8240-785b60a3f9ca|2026-11-16|Overgouw 115, Almere Ha
 meldpunt|a5e76c06-62a4-4916-aef4-552af9f90936|2026-11-16|Vliegersveld, Biddinghuizen|Wachtend op validatie|52.44934|5.69771|te laat
 meldpunt|3529346c-9d3d-4e15-ba89-5e96668278a4|2026-11-18|Hopklaverstraat 40, 1314 SX Almere|Wachtend op validatie|52.38376|5.20889|te laat
 meldpunt|168199b4-5de8-4273-9c41-b2e829319ca8|2026-11-18|Wilgengriend 54, Almere Haven|Wachtend op validatie|52.34094|5.24145|te laat
+meldpunt|d62c5c09-0f64-4b7d-8ee5-6837c6c8360f|2026-11-19|Fisherpad, Almere Stad|Wachtend op validatie|52.37041|5.16569|te laat
+handmatig|N3|2026-11-19|Zuiderzeeweg, Zeewolde|Handmatig toegevoegd|52.33108509019379|5.5381987641791826|te laat
